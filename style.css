@@ -98,7 +98,10 @@ video {
         margin-left: 20px;
     }
 
-    
+    .parrafoPrincipal {
+        margin-top: 15px;
+        font-size: 18px;
+    }
 
     footer {
     padding: 20px;
