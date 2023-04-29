@@ -10,17 +10,23 @@
 </head>
 <body>
     <header>
-        
+        <div class="headerItems">
        <img src="logoVozDelAtril.jpg">
         <h1 class="titulo">La Voz del Atril</h1>
-   
-    <nav class="barraNav">
+    </div>
+    <!-- </header> -->
+    <button id="abrir" class="abrirMenu">abrir</button>
+      
+    <nav id= "barraNav" class="barraNav">
+        
            <ul>
+            <div  class="lista">  
+             <button id="cerrar" class="cerrarMenu">cerrar</button>
             <li><a href="index.html">INICIO</a> </li>
             <li><a href="historias.html">HISTORIAS</a> </li>
             <li><a href="acercademi.html">ACERCA DE MI</a> </li>
             <li><a href="recursos.html">RECURSOS</a> </li>
-
+             </div>
            </ul> 
         </nav>
     </header>
@@ -30,19 +36,23 @@
                <video width="720" height="1080" controls autoplay>
                 <source src="LaVozDelAtril.mp4" type = "video/mp4">
                </video> 
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia accusantium molestias harum natus? Sed cupiditate suscipit ducimus voluptas, voluptatum provident delectus voluptate, doloremque reiciendis neque quas quibusdam eveniet temporibus nobis?</p>
+              <p class="parrafoAside">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia accusantium molestias harum natus? Sed cupiditate suscipit ducimus voluptas, voluptatum provident delectus voluptate, doloremque reiciendis neque quas quibusdam eveniet temporibus nobis?</p>
             </aside>
             <section class="contenedorPrincipal"> 
                 <div class="imgTitulo">
-               <!-- <img class="imgPrincipal"  src="imgLaVozDelAtril.jfif"> -->
-                <h1 class="tituloPrincipal">RECURSOS</h1>
+                <!-- <img class="imgPrincipal"  src="imgLaVozDelAtril.jfif"> -->
+                <h1 class="tituloPrincipal">Recursos</h1>
                 </div>
-                <p>
+                <p class="parrafoPrincipal"> 			
+
+               
+                   
+                   
                     </p>
             </section>
      </div> 
 
-
+        
     </main>
 
     <footer>
@@ -85,6 +95,6 @@
         </div>
 
     </footer>
-    
+    <script src="jason.js"></script>
 </body>
 </html>
