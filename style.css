@@ -20,13 +20,10 @@ header {
     padding: 20px;
 }
 
-.abrirMenu {
+.abrirMenu, .cerrarMenu{
     display: none;
 }
 
-.cerrarMenu {
-    display: none;
-}
 
  .headerItems {
     display: flex;
@@ -162,10 +159,20 @@ video {
       .barraNav ul , .contenedor , .lista {
         flex-direction: column;
     }
-        .abrirMenu , .cerrarMenu {
+        .abrirMenu  {
             display: block; 
+            font-size: 1.1rem;
+            cursor: pointer;
+           }
+
+             .cerrarMenu {
+                display: block;
+                font-size: 1.1rem;
+                cursor:pointer;
+
+             }
             
-        }
+     
 
         
         
@@ -186,11 +193,11 @@ video {
     .barraNav  {
         opacity: 0;
         visibility: hidden;
-        
+    
         position: absolute;
         right: 0;
         top: 0;
-        background-color: rgba(0, 0, 0, 0.65);
+        background-color: rgba(0, 0, 0, 0.80);
         border-radius: 5px;
         bottom: 0;
         padding: 10px;
