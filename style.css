@@ -15,7 +15,7 @@ header {
     border-radius: 5px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     gap: 30px;
     padding: 20px;
 }
@@ -25,8 +25,9 @@ header img {
     width: 100px;
 }
 .barraNav {
+    
     padding: 5px;
-    background-color:rgb(0, 0, 83);
+    background-color:rgba(0, 0, 0, 0.4);
     border-radius: 5px;
 }
 .titulo {
@@ -40,15 +41,25 @@ header img {
     gap: 10px;
 }
 .barraNav ul li {
+    
     list-style: none;
 }
 .barraNav ul li a{
+    
     font-family: bold;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     color:white;
     margin-left: 20px;
+
 }
+
+.lista {
+    display: flex;
+    gap: 10px;
+   
+}
+
 .contenedor {
     background-color: bisque;
     display: flex;
@@ -82,9 +93,10 @@ video {
 }
 
     .imgTitulo {
-      display: flex;  
+      /* display: flex;   */
       justify-content: space-around;
       align-items: center;
+      
     }
 
     .imgPrincipal {
@@ -94,8 +106,9 @@ video {
     }
 
     .tituloPrincipal {
-
+        margin-top: 20px;
         margin-left: 20px;
+        color: rgb(0, 0, 70);
     }
 
     .parrafoPrincipal {
@@ -105,7 +118,7 @@ video {
 
     footer {
     padding: 20px;
-    background-color: rgb(0, 0, 83);
+    background-color: rgb(0, 0, 50);
     border-radius: 5px;
     color: white;
 }
@@ -131,12 +144,12 @@ video {
     @media screen and  (max-width:700px )
 {
 
-    header,  .barraNav ul , .contenedor {
+    header,  .barraNav ul , .contenedor , .lista{
         flex-direction: column;
     }
 
     .titulo {
-        font-size: 30px;
+        font-size: 25px;
     }
   
     header img {
@@ -146,27 +159,42 @@ video {
         gap: 10px;
     }
 
+    .barraNav  {
+        background-color: rgba(0, 0, 0, 0.350);
+        border-radius: 10px;
+    }
+
     .barraNav ul li a{
 
         font-size: 15px;
         margin-left: auto;
 
     }
+     
+   
+    .parrafoAside {
+        justify-content: center;
+        margin-top: 10px;
+    }
         .imgPrincipal {
             width: 80%;
             display: block;
            margin-left: auto;
            margin-right: auto;
+           margin-bottom: 15px;
         }
         .imgTitulo {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-        }
+        } 
+
 
         .tituloPrincipal{
             margin: 10px ;
             margin-top: 20px;
+            color:rgb(0, 0, 83); 
+
         }
 
     }
