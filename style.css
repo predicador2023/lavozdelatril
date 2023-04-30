@@ -105,14 +105,14 @@ video {
 }
 
     .imgTitulo {
-      /* display: flex;   */
-      justify-content: space-around;
+      
+      justify-content: center;
       align-items: center;
       
     }
 
     .imgPrincipal {
-       
+      
         width: 400px;
        
     }
@@ -143,8 +143,12 @@ video {
     text-align: left;
 
 }
-
+      .parrafo2{
+        display: flex;
+        gap: 100px;
+      }
     .parrafo2 a {
+       
     text-decoration: none;
     list-style: none;
     color: white;
@@ -247,6 +251,10 @@ video {
             margin-top: 20px;
             color:rgb(0, 0, 83); 
 
+        }
+        .parrafo2 {
+            flex-direction: column;
+            gap: 5px;
         }
 
     }
