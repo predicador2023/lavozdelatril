@@ -163,26 +163,29 @@ video {
             display: block; 
             font-size: 1.1rem;
             cursor: pointer;
+            color: white;
+            background-color:rgba(0, 0, 0, 0) ;
+            border: 0;
            }
 
              .cerrarMenu {
                 display: block;
-                font-size: 1.1rem;
+                font-size: 3px;
                 cursor:pointer;
+                color: white;
+                background-color: rgba(0, 0, 0, 0);
+                border: 0;
+                
 
              }
             
-     
-
-        
-        
-       
+              
     .titulo {
         font-size: 25px;
     }
   
     header img {
-        width: 70px;
+        width: 60px;
     }
     header {
         gap: 10px;
@@ -208,6 +211,7 @@ video {
         visibility: visible;
     }
     .lista {
+        padding: 10px;
         align-items: end;
     }
 
