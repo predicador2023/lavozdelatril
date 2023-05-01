@@ -127,6 +127,12 @@ video {
         margin-top: 15px;
         font-size: 18px;
     }
+    .parrafoVersiculo {
+        font-size: 18px;
+    }
+    .parrafoFinal {
+        font-size: 18px;
+    }
 
     footer {
     padding: 20px;
@@ -179,11 +185,9 @@ video {
                 color: white;
                 background-color: rgba(0, 0, 0, 0);
                 border: 0;
-                
 
              }
-            
-              
+                       
     .titulo {
         font-size: 25px;
     }
@@ -204,7 +208,7 @@ video {
         position: absolute;
         right: 0;
         top: 0;
-        background-color: rgba(0, 0, 0, 0.80);
+        background-color: rgba(0, 0, 0, 0.95);
         border-radius: 5px;
         bottom: 0;
         padding: 10px;
@@ -224,10 +228,8 @@ video {
 
         font-size: 15px;
         margin-left: auto;
-
     }
-     
-   
+       
     .parrafoAside  {
         justify-content: center;
         margin-top: 10px;
@@ -244,7 +246,6 @@ video {
             justify-content: center;
             align-items: center;
         } 
-
 
         .tituloPrincipal  {
             margin: 10px ;
