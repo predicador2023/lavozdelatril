@@ -208,7 +208,7 @@ video {
       
 
         position: absolute;
-        
+        right: 0;
         left: 0;
         top: 95.16px;
         background-color: #182229;
@@ -219,7 +219,7 @@ video {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         /* transition: visibility 0.3s; */
         left: 100%;
-        transition: left 0.3s ease;
+        transition: left 0.3s;
         height: calc(100%-95.16px);
         overflow-y: auto;
     }
