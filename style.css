@@ -207,7 +207,7 @@ video {
         /* visibility: hidden; */
       
 
-        position: absolute;
+        position: fixed;
         right: 0;
         left: 0;
         top: 95.16px;
