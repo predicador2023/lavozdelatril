@@ -147,6 +147,7 @@ video {
     align-items: end;
     display: flex;
     text-align: left;
+    
 
 }
       .parrafo2{
@@ -208,11 +209,13 @@ video {
         position: absolute;
         right: 0;
         top: 0;
-        background-color: rgba(0, 0, 0, 0.95);
+        background-color: #182229;
         border-radius: 5px;
         bottom: 0;
         padding: 10px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        transition: visibility 0.3s;
+        transition: opacity 0.3s;
     }
     .barraNav.visible {
         opacity:1;
@@ -256,6 +259,12 @@ video {
         .parrafo2 {
             flex-direction: column;
             gap: 5px;
+          
         }
 
+        .parrafo2 div a .parra1, .parrafo2 div a .parra2, .parrafo2 div a .parra3 {
+            font-size: 20px;
+        }
+            
+      
     }
