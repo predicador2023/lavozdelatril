@@ -229,6 +229,14 @@ video {
         left: 50%;
 
     }
+
+    .body.no-scroll {
+
+        overflow: hidden;
+
+    }
+
+
     .lista {
         padding: 10px;
         align-items: end;
