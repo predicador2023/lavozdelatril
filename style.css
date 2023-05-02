@@ -203,23 +203,31 @@ video {
         gap: 5px;
     }
     .barraNav  {
-        opacity: 0;
-        visibility: hidden;
-    
+        /* opacity: 0; */
+        /* visibility: hidden; */
+      
+
         position: absolute;
-        right: 0;
-        top: 0;
+        
+        left: 0;
+        top: 95.16px;
         background-color: #182229;
         border-radius: 5px;
         bottom: 0;
         padding: 10px;
+        width: 50%;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        transition: visibility 0.3s;
-        transition: opacity 0.3s;
+        /* transition: visibility 0.3s; */
+        left: 100%;
+        transition: left 0.3s ease;
+        height: calc(100%-95.16px);
+        overflow-y: auto;
     }
     .barraNav.visible {
-        opacity:1;
-        visibility: visible;
+        /* opacity:1; */
+        /* visibility: visible; */
+        left: 50%;
+
     }
     .lista {
         padding: 10px;
