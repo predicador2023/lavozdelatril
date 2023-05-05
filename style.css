@@ -89,7 +89,7 @@ aside {
     border-radius: 10px;
 }
 
-.contenedor video {
+    .contenedor video {
     width: 80%;
     height: auto;
    
@@ -103,7 +103,7 @@ video {
     section {
     background-color: darksalmon;
     flex: 70%;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
@@ -179,9 +179,89 @@ video {
      margin-bottom: 15px;
      
     }
+    /* comienza la grilla para la seccion recursos */
+
+    .contenedorHistorias {
+       width: 100%;
+        display: flex;
+        margin: 0;
+    }
+        
+        .contenedorHistorias .videoHistorias {
+            width: 80%;
+            
+            height: auto;  }
+
+         
+   
+    .grid-contenedor {
+        width: 100%;
+        display: flex;
+    
+        flex-wrap: wrap;
+        justify-content: space-around;
+         /* margin: auto;  */
+        padding: 5px;
+         /* background-color: lightgreen;  */
+        border: 1px solid black;
+        margin-left: 1px;
+         margin-right: auto;
+         
+    }
+
+    .caja {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        width: 260px;
+        height: 220px;
+        gap: 5px;
+        margin-top: 10px;
+        border: 1px solid black;
+        background-color: gainsboro;
+        border-radius: 10px;
+        text-align: center;
+       
+         /* line-height: 150px;  */
+    
+    }
+        .asideHistorias{
+            background-color: cadetblue;
+            flex: 30%;
+            padding: 20px;
+            border-radius: 10px;
+
+            
+        }
+       
+        
+        .videoHistorias {
+           
+             display: block; 
+            margin-left: auto;
+            margin-right: auto;
+        
+        }
+
+    .link  .uno , .link .dos {
+            margin-top: 5px;
+            margin-left: 2%;
+            margin-bottom: 1px;
+            flex-direction: column;
+            width: 90%;
+            height: 180px;
+            object-fit: cover;
+           
+        }
+                p {
+                    flex-direction: column;
+                    margin-top: 5px;
+                }
 
 
-    @media screen and  (max-width:750px )
+
+    @media screen and  (max-width:850px )
 {
 
       .barraNav ul , .contenedor , .lista {
@@ -310,4 +390,14 @@ video {
                 font-size: 25px;
             }
       
+            
+            /* comienza la grilla para la seccion recursos */
+
+            .contenedorHistorias {
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+           
     }
