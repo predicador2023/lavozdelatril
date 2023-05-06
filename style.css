@@ -159,6 +159,10 @@ video {
     
 
 }
+.parrafo1 {
+    justify-content: center;
+    text-align: center;
+}
       .parrafo2{
         display: flex;
         gap: 100px;
@@ -370,8 +374,9 @@ video {
 
         }
         .parrafo2 {
-            flex-direction: column;
+            /* flex-direction: column; */
             gap: 5px;
+            justify-content: space-around;
           
         }
 
