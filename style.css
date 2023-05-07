@@ -126,6 +126,13 @@ video {
        
     }
 
+    .imgSecundario {
+        display: block;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .tituloPrincipal {
         margin-top: 20px;
         margin-left: 20px;
@@ -257,7 +264,7 @@ video {
         
         }
 
-    .link  .uno , .link .dos {
+    .link  .uno , .link .dos , .link .tres{
             margin-top: 5px;
             margin-left: 2%;
             margin-bottom: 1px;
@@ -364,6 +371,14 @@ video {
         margin-top: 10px;
     }
         .imgPrincipal {
+            width: 80%;
+            display: block;
+           margin-left: auto;
+           margin-right: auto;
+           margin-bottom: 15px;
+        }
+
+        .imgSecundario {
             width: 80%;
             display: block;
            margin-left: auto;
