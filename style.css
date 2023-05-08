@@ -176,6 +176,7 @@ video {
 
 }
 .parrafo1 {
+    font-size: 21px;
     justify-content: center;
     text-align: center;
 }
@@ -397,6 +398,12 @@ video {
             color:rgb(0, 0, 83); 
 
         }
+
+        .parrafo1 {
+            font-size: 17px;
+        }
+
+
         .parrafo2 {
             /* flex-direction: column; */
             /* gap: 5px; */
