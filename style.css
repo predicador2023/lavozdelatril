@@ -331,7 +331,7 @@ video {
 
       .barraNav ul , .contenedor , .lista {
         flex-direction: column;
-        margin-right: 5px;
+        /* margin-right: 5px; */
       
     }
              .abrirMenu  {
