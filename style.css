@@ -1,4 +1,4 @@
-
+o
 *{
     margin: 0;
     padding: 0;
@@ -51,6 +51,7 @@ header img {
     display: flex;
     text-align: center;
     gap: 10px;
+   
 }
 .barraNav ul li {
     
@@ -62,9 +63,52 @@ header img {
     text-decoration: none;
     font-size: 18px;
     color:white;
-    margin-left: 20px;
+    margin-left: 10px;
 
 }
+
+
+.menuRecursos {
+   --transform: rotate(0deg);
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0); 
+  
+ }
+
+     .menuRecursos:hover { 
+     --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);  
+    --transform: rotate(90deg); 
+
+ } 
+ .menuDesplegable {
+    margin-right: 50px;
+    margin-top: 10px;
+    align-items: last baseline;
+    flex-direction: column;
+    clip-path: var(--clip);
+    transition: clip-path 0.3s;
+    background-color:rgba(0, 0, 0, 0.4);
+    padding: 10px;
+}  
+
+.menuArrow {
+    margin-top: 0;
+    width: 25px;
+    transform: var(--transform);
+    transition: transform 0.3s ;
+  
+    margin-left: 5px;
+    margin-right: 2px;
+    
+}
+      
+.menuPrincipal {
+    margin-top: 10px;
+    gap: 20px;
+}
+    /* --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
+    /* --clip: polygon(0 0, 100% 0, 100% 0, 0 0); */
+
+
 
 .lista {
     display: flex;
@@ -287,6 +331,8 @@ video {
 
       .barraNav ul , .contenedor , .lista {
         flex-direction: column;
+        margin-right: 5px;
+      
     }
              .abrirMenu  {
               display: block; 
@@ -328,7 +374,7 @@ video {
         position: fixed;
         right: 0;
         left: 0;
-        top: 95.16px;
+        top: 110.16px;
         background-color: #182229;
         border-radius: 5px;
         bottom: 0;
@@ -338,7 +384,8 @@ video {
         /* transition: visibility 0.3s; */
         left: 100%;
         transition: left 0.3s;
-        height: calc(100%-95.16px);
+        /* height: calc(100%-95.16px); */
+        height: calc(100%-110.16px);
         overflow-y: auto;
     }
     .barraNav.visible {
@@ -354,10 +401,26 @@ video {
 
     }
 
+      .menuDesplegable { 
+         align-items: flex-start;
+         margin-right: 10px;
+         justify-content: flex-start;
+         background-color: rgba(0, 0, 0, 0);
+     } 
+
+        .menuInside {
+            margin-right: 0;
+            margin-left: 0;
+          
+        }
+        .menuRecursos  {
+            margin-right: 20px;
+        }
 
     .lista {
         padding: 10px;
-        align-items: end;
+        align-items: flex-start;
+        justify-content: left;
     }
 
    
