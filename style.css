@@ -354,7 +354,7 @@ video {
                      }
                        
     .titulo {
-        font-size: 25px;
+        font-size: 22px;
     }
   
     header img {
@@ -374,7 +374,7 @@ video {
         position: fixed;
         right: 0;
         left: 0;
-        top: 110.16px;
+        top: 101.16px;
         background-color: #182229;
         border-radius: 5px;
         bottom: 0;
@@ -385,7 +385,7 @@ video {
         left: 100%;
         transition: left 0.3s;
         /* height: calc(100%-95.16px); */
-        height: calc(100%-110.16px);
+        height: calc(100%-101.16px);
         overflow-y: auto;
     }
     .barraNav.visible {
