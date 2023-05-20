@@ -17,7 +17,7 @@ header {
     align-items: center;
     justify-content: space-around;
     gap: 30px;
-    padding: 20px;
+    padding: 15px;
 }
 
 .abrirMenu, .cerrarMenu{
@@ -43,7 +43,7 @@ header img {
     border-radius: 5px;
 }
 .titulo {
-    font-size: 35px;
+    font-size: 30px;
     color:white;
     text-shadow: 3px 3px 0 black;
 }
@@ -61,14 +61,17 @@ header img {
     
     font-family: bold;
     text-decoration: none;
-    font-size: 18px;
+    /* font-size: 17px; */
     color:white;
     margin-left: 10px;
 
 }
 
 
+
+
 .menuRecursos {
+    font-size: 17px;
    --transform: rotate(0deg);
     --clip: polygon(0 0, 100% 0, 100% 0, 0 0); 
   
@@ -80,6 +83,7 @@ header img {
 
  } 
  .menuDesplegable {
+    
     margin-right: 50px;
     margin-top: 10px;
     align-items: last baseline;
@@ -96,7 +100,7 @@ header img {
     transform: var(--transform);
     transition: transform 0.3s ;
   
-    margin-left: 5px;
+    margin-left: 3px;
     margin-right: 2px;
     
 }
@@ -104,7 +108,14 @@ header img {
 .menuPrincipal {
     margin-top: 10px;
     gap: 20px;
+    font-size: 17px;
 }
+
+ .menuInside {
+
+    font-size: 14px;
+    margin-left: 10px;
+ }
     /* --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
     /* --clip: polygon(0 0, 100% 0, 100% 0, 0 0); */
 
@@ -124,11 +135,11 @@ header img {
 
 .contenedor div{
     flex-direction: column;
-    flex: 70%;
+    flex: 75%;
 }
 aside {
     background-color: cadetblue;
-    flex: 30%;
+    flex: 25%;
     padding: 20px;
     border-radius: 10px;
 }
@@ -146,7 +157,7 @@ video {
 }
     section {
     background-color: darksalmon;
-    flex: 70%;
+    flex: 75%;
     padding: 10px;
     border-radius: 10px;
     justify-content: center;
@@ -195,6 +206,7 @@ video {
     }
 
     footer {
+        
         display: flex;
         justify-content: center;
     padding: 20px;
@@ -252,7 +264,7 @@ video {
         margin: 0;
     }
         
-        .contenedorHistorias .videoHistorias {
+        /* .contenedorHistorias*/ .videoHistorias { 
             width: 80%;
             
             height: auto;  }
@@ -261,16 +273,18 @@ video {
    
     .grid-contenedor {
         width: 100%;
+      
         display: flex;
     
         flex-wrap: wrap;
-        justify-content: space-around;
-         /* margin: auto;  */
+        justify-content: space-between;
+          margin: auto;  
         padding: 5px;
          /* background-color: lightgreen;  */
         border: 1px solid black;
-        margin-left: 1px;
-         margin-right: auto;
+        /* margin-left: 1px; */
+        /* margin-left: 0; */
+         /* margin-right: auto; */
          
     }
 
@@ -278,22 +292,23 @@ video {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 10px;
-        width: 260px;
-        height: 220px;
+        padding: 15px;
+        width: 250px;
+        height: 215px;
         gap: 5px;
         margin-top: 10px;
         border: 1px solid black;
         background-color: gainsboro;
         border-radius: 10px;
         text-align: center;
+    
        
         
     
     }
         .asideHistorias{
             background-color: cadetblue;
-            flex: 30%;
+            flex: 25%;
             padding: 20px;
             border-radius: 10px;
 
@@ -329,10 +344,25 @@ video {
     @media screen and  (max-width:850px )
 {
 
+        main {
+            width: 100%;
+
+        }
+
       .barraNav ul , .contenedor , .lista {
         flex-direction: column;
-        /* margin-right: 5px; */
-      
+        margin-left: 0;
+        /* margin-right: 0; */
+        margin-right: 0;      
+    }
+
+    .contenedor {
+        width: 100%;
+    }
+
+    .contenedorPrincipal {
+        width: 100%;
+   
     }
              .abrirMenu  {
               display: block; 
@@ -358,10 +388,11 @@ video {
     }
   
     header img {
-        width: 60px;
+        width: 50px;
     }
     header {
-        gap: 10px;
+        width: 100%;
+        /* gap: 10px; */
     }
     .headerItems{
         gap: 5px;
@@ -374,7 +405,7 @@ video {
         position: fixed;
         right: 0;
         left: 0;
-        top: 101.16px;
+        top: 90.16px;
         background-color: #182229;
         border-radius: 5px;
         bottom: 0;
@@ -385,7 +416,7 @@ video {
         left: 100%;
         transition: left 0.3s;
         /* height: calc(100%-95.16px); */
-        height: calc(100%-101.16px);
+        height: calc(100%-90.16px);
         overflow-y: auto;
     }
     .barraNav.visible {
@@ -402,23 +433,31 @@ video {
     }
 
       .menuDesplegable { 
+        /* font-size: 14px; */
          align-items: flex-start;
-         margin-right: 10px;
+         /* margin-right: 15px; */
          justify-content: flex-start;
          background-color: rgba(0, 0, 0, 0);
      } 
-
+            .menuPrincipal {
+                font-size: 14px;
+            }
         .menuInside {
-            margin-right: 0;
+            font-size: 12px;
+            /* margin-right: 0;  */
             margin-left: 0;
           
         }
+
         .menuRecursos  {
-            margin-right: 20px;
+          /* margin-left: 0; */
+            font-size: 15px;
+            justify-content: flex-start;
+            /* margin-right: px; */
         }
 
     .lista {
-        padding: 10px;
+        padding: 5px;
         align-items: flex-start;
         justify-content: left;
     }
@@ -426,7 +465,7 @@ video {
    
     .barraNav ul li a {
 
-        font-size: 15px;
+        /* font-size: 15px; */
         margin-left: auto;
     }
        
@@ -489,6 +528,12 @@ video {
             .h2Recursos {
                 font-size: 25px;
             }
+
+
+            .grid-contenedor {
+                flex-direction: column;
+                justify-content: center;
+            }
       
             
             /* comienza la grilla para la seccion recursos */
@@ -499,5 +544,30 @@ video {
                 margin-left: 0px;
                 margin-right: 0px;
             }
+            aside {
+              
+                flex-direction: column;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+            .asideHistorias {
+                flex-direction: column;
+                justify-content: center;
+            }
+            .videoHistorias {
+                justify-content: center;
+                align-items: center;
+          
+                margin: 10px;
+                
+            }
+
+            footer  {
+                width: 100%;
+                padding: 5px;
+            }
            
-    }
+            }
+           
+    
