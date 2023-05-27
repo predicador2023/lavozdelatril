@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>La Voz del Atril</title>
 </head>
 <body id="body" class="body">
     <header>
         <div class="headerItems">
-       <img src="logoVozDelAtril.jpg">
+       <img src="imagenes/logoVozDelAtril.jpg">
         <h1 class="titulo">La Voz del Atril</h1>
     </div>
     <!-- </header> -->
@@ -31,10 +31,17 @@
                 <path d="M18 6l-12 12"></path>
                 <path d="M6 6l12 12"></path>
              </svg> </button>
-            <li><a href="index.html">INICIO</a> </li>
-            <li><a href="historias.html">HISTORIAS</a> </li>
-            <li><a href="acercademi.html">ACERCA DE MI</a> </li>
-            <li><a href="recursos.html">RECURSOS</a> </li>
+            <li class="menuPrincipal"><a href="index.html">INICIO</a> </li>
+            <li class="menuPrincipal"><a href="historias.html">HISTORIAS</a> </li>
+            <li class="menuPrincipal"><a href="acercademi.html">ACERCA DE MI</a> </li>
+            <li class="menuRecursos">RECURSOS   <img src="assets/arrow.svg" class="menuArrow"></a>
+                <ul class="menuDesplegable"> 
+                    <li class="menuInside"><a href="peliculas.html" class="menuLink menuLinkInside">PELICULAS  </a> </li>
+                     <li class="menuInside"><a href="videos.html" class="menuLink menuLinkInside">VIDEOS  </a> </li>
+                     <li class="menuInside"> <a href="descargas.html" class="menuLink menuLinkInside">DESCARGAS  </a> </li>
+                </ul>
+            
+            </li>
              </div>
            </ul> 
         </nav>
@@ -46,7 +53,7 @@
            
             <section class="contenedorPrincipal"> 
                 <div class="imgTitulo">
-                <img class="imgPrincipal"  src="HuidaEgipto.jpg" alt="imagen la huida a Egipto">
+                <img class="imgPrincipal"  src="imagenes/HuidaEgipto.jpg" alt="imagen la huida a Egipto">
                 <h1 class="tituloPrincipal">La huida a Egipto</h1>
                 </div>
                 <p class="parrafoPrincipal"> 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Estaba en la mesa almorzando con mi hija antes de llevarla a la escuela, juntos estábamos mirando un programa de televisión, era el canal Encuentro, de la televisión nacional argentina. Me llamó la atención sobre la disputa que había entre dos pinturas exactamente iguales, la huida a Egipto, de el pintor maestro del clasicismo francés Nicolás Poussin. Y cada una reclamaba ser la original del artista ya fallecido. Los entendidos daban sus opiniones personales y la crítica especializada estaba casi dividida, uno de ellos era la réplica del otro. Luego, de observar finamente, si se puede observar de esa manera, muchos especialistas daban opiniones sobre la tendencia del pintor en sus últimos años, las formas de pinceladas, el brillo y hasta la forma de dibujo del cuadro. Entre tanta polémica se hicieron estudios científicos como el de rayos X, que tenía la finalidad de saber el grado de borrones o arrepentimientos según palabras técnicas de los pintores, que no es sólo las veces que el artista borraba y volvía a pintar. <br>
