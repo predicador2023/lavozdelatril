@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>La Voz del Atril</title>
 </head>
 <body id="body" class="body">
     <header>
         <div class="headerItems">
-       <img src="logoVozDelAtril.jpg">
+       <img src="imagenes/logoVozDelAtril.jpg">
         <h1 class="titulo">La Voz del Atril</h1>
     </div>
     <!-- </header> -->
@@ -31,10 +31,17 @@
                 <path d="M18 6l-12 12"></path>
                 <path d="M6 6l12 12"></path>
              </svg> </button>
-            <li><a href="index.html">INICIO</a> </li>
-            <li><a href="historias.html">HISTORIAS</a> </li>
-            <li><a href="acercademi.html">ACERCA DE MI</a> </li>
-            <li><a href="recursos.html">RECURSOS</a> </li>
+            <li class="menuPrincipal"><a href="index.html">INICIO</a> </li>
+            <li class="menuPrincipal"><a href="historias.html">HISTORIAS</a> </li>
+            <li class="menuPrincipal"><a href="acercademi.html">ACERCA DE MI</a> </li>
+            <li class="menuRecursos">RECURSOS   <img src="assets/arrow.svg" class="menuArrow"></a>
+                <ul class="menuDesplegable"> 
+                    <li class="menuInside"><a href="peliculas.html" class="menuLink menuLinkInside">PELICULAS  </a> </li>
+                     <li class="menuInside"><a href="videos.html" class="menuLink menuLinkInside">VIDEOS  </a> </li>
+                     <li class="menuInside"> <a href="descargas.html" class="menuLink menuLinkInside">DESCARGAS  </a> </li>
+                </ul>
+            
+            </li>
              </div>
            </ul> 
         </nav>
@@ -43,17 +50,16 @@
         <div class="contenedorHistorias">
         <section class="grid-contenedor">
 
-            <div class="caja">
-                <a class="link"  href="LaHuidaEgipto.html" target="_blank" >
-                   
-                <img class="uno"  src="HuidaEgipto.jpg" alt="La huida a Egipto"></a>
+            <!-- <div class="caja">
+                <a class="link"  href="LaHuidaEgipto.html" target="_blank" > 
+                <img class="uno"  src="imagenes/HuidaEgipto.jpg" alt="La huida a Egipto"></a>
                 <p><b> La Huida a Egipto</b> </p> 
-            </div> 
+            </div>   -->
             
             
             <div class="caja">
-                <a class="link"  href="LaPlazaDeLosBurros.html" target="_blank" >
-                <img class="dos" src="LaPlazaDeLosBurros.jpg" alt="la plaza de los burros"></a>
+                <a class="link"  href="laPlazaDeLosBurros.html" target="_blank" >
+                <img class="dos" src="imagenes/LaPlazaDeLosBurros.jpg" alt="la plaza de los burros"></a>
                 <p><b>La Plaza de los Burros</b> </p>
             </div>
 
@@ -61,7 +67,13 @@
                 <a class="link"  href="unaLeccionDeAjedrez.html" target="_blank" >
                 <img class="tres" src="https://cdn.pixabay.com/photo/2016/07/12/11/39/checkmate-1511866_1280.jpg" alt="una leccion de ajedrez"></a>
                 <p><b>Una lección de Ajedrez</b> </p>
-            </div>
+            </div>   
+            
+            <div class="caja">
+                <a class="link"  href="laHuidaEgipto.html" target="_blank" >
+                <img class="cuatro" src="imagenes/laHuidaEgipto.png" alt="imagen La Huida a Egipto"></a>
+                <p><b>La Huida a Egipto</b> </p>
+            </div>  
            
             <div class="caja">caja 4</div>  
             <div class="caja">caja 5</div>
@@ -69,17 +81,19 @@
             <div class="caja">caja 7</div>
             <div class="caja">caja 8</div>
             <div class="caja">caja 9</div>
-            
+            <div class="caja">caja 10</div>
+            <div class="caja">caja 11</div>
+            <div class="caja">caja 12</div>
            
           
         </section>
 
-            <aside class="asideHistorias">
+            <!-- <aside class="asideHistorias">
                 <video class="videoHistorias" width="720" height="1080" controls autoplay>
                  <source src="LaVozDelAtril.mp4" type = "video/mp4">
                 </video> 
                <p class="parrafoAside"></p>
-             </aside>
+             </aside> -->
      </div> 
 
         
