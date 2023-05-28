@@ -363,7 +363,7 @@ video {
         
         }
 
-      .dos , .tres, .cuatro {
+      .uno , .dos, .tres {
          
             margin-left: 2px;
             margin-bottom: 1px;
@@ -388,6 +388,13 @@ video {
 
                 }
 
+                .imgConstruccion {
+                    display: flex;
+                  flex-direction: column;
+                  width: 500px;
+                  
+                }
+
 
 
     @media screen and  (min-width: 260px) and ( max-width:528px ){
@@ -397,6 +404,11 @@ video {
     
     justify-content: center;
 }
+
+    .imgConstruccion {
+        
+        width: 280px;
+    }
     }
 
     @media screen and  (max-width:850px )
