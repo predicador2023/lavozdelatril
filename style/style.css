@@ -58,9 +58,8 @@ header img {
     
     list-style: none;
 }
-.barraNav ul li a{
-    
-    font-family: bold;
+.barraNav ul li a {
+    font-family: 'Jura', sans-serif;
     text-decoration: none;
     /* font-size: 17px; */
     color:white;
@@ -68,9 +67,13 @@ header img {
 
 }
 
+.barraNav ul li a:hover {
+    color: yellowgreen;
+}
+
 
 .menuRecursos {
-    font-family: bold;
+    font-family: 'Jura', sans-serif;
     font-size: 17px;
     color: white;
    --transform: rotate(0deg);
@@ -79,8 +82,9 @@ header img {
  }
 
      .menuRecursos:hover { 
-     --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);  
-    --transform: rotate(90deg); 
+         --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);  
+         --transform: rotate(90deg); 
+         color: yellowgreen;
 
  } 
  .menuDesplegable {
@@ -107,6 +111,7 @@ header img {
 }
       
 .menuPrincipal {
+    font-family: 'Jura', sans-serif;
     margin-top: 10px;
     gap: 20px;
     font-size: 17px;
@@ -393,7 +398,8 @@ video {
 
 
     @media screen and  (min-width: 260px) and ( max-width:528px ){
-.grid-contenedor{
+    
+        .grid-contenedor{
 
     flex-direction: column;
     
@@ -417,6 +423,7 @@ video {
         }
 
       .barraNav ul , .contenedor , .lista {
+        font-family: 'Jura', sans-serif;
         flex-direction: column;
         margin-left: 0;
         /* margin-right: 0; */
@@ -473,7 +480,8 @@ video {
         bottom: 0;
         padding: 10px;
         width: 50%;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: 'Jura', sans-serif;
+      
         /* transition: visibility 0.3s; */
         left: 100%;
         transition: left 0.3s;
@@ -515,6 +523,7 @@ video {
           /* margin-left: 0; */
             font-size: 14px;
             justify-content: flex-start;
+            font-family: 'Jura', sans-serif;
             /* margin-right: px; */
         }
 
@@ -529,6 +538,7 @@ video {
 
         /* font-size: 15px; */
         margin-left: auto;
+        font-family: 'Jura', sans-serif;
     }
        
     .parrafoAside  {
