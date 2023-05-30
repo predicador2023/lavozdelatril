@@ -88,7 +88,7 @@ header img {
 
  } 
  .menuDesplegable {
-    
+    font-family: 'Jura', sans-serif;
     margin-right: 50px;
     margin-top: 10px;
     align-items: last baseline;
@@ -432,6 +432,7 @@ video {
 
       .barraNav ul , .contenedor , .lista {
         font-family: 'Jura', sans-serif;
+      
         flex-direction: column;
         margin-left: 0;
         /* margin-right: 0; */
@@ -475,7 +476,7 @@ video {
         /* opacity: 0; */
         /* visibility: hidden; */
       
-
+        font-family: 'Jura', sans-serif;
         position: fixed;
         right: 0;
         /* left: 0; */
@@ -515,9 +516,11 @@ video {
          background-color: rgba(0, 0, 0, 0);
      } 
              .menuPrincipal {
+                font-family: 'Jura', sans-serif;
                 font-size: 15px;
             } 
         .menuInside {
+            font-family: 'Jura', sans-serif;
             font-size: 14px;
             /* margin-right: 0;  */
             margin-left: 0;
@@ -545,10 +548,12 @@ video {
         /* font-size: 15px; */
         margin-left: auto;
         font-family: 'Jura', sans-serif;
+        color: white;
     }
 
     .menuPrincipal , .menuRecursos {
         font-family: 'Jura', sans-serif;
+        color: white;
     }
        
     .parrafoAside  {
