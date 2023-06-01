@@ -57,6 +57,7 @@ header img {
 .barraNav ul li {
     
     list-style: none;
+    align-items: center;
 }
 .barraNav ul li a {
     font-family: 'Jura', sans-serif;
@@ -78,6 +79,8 @@ header img {
     color: white;
    --transform: rotate(0deg);
     --clip: polygon(0 0, 100% 0, 100% 0, 0 0); 
+    align-items: center;
+    justify-content: center;
   
  }
 
@@ -99,7 +102,6 @@ header img {
     padding: 10px;
 }  
 
-
 .menuArrow {
     
     margin-top: 5px;
@@ -117,6 +119,8 @@ header img {
     margin-top: 10px;
     gap: 20px;
     font-size: 17px;
+    
+
 }
 
  .menuInside {
