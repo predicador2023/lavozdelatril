@@ -150,7 +150,7 @@ header img {
     flex: 75%;
 }
 aside {
-    background-color: rgb(171, 228, 230);
+    background-color: rgb(224, 248, 248);
     flex: 25%;
     padding: 20px;
     border-radius: 10px;
@@ -168,7 +168,7 @@ video {
 
 }
     section {
-    background-color: rgb(255, 216, 203);
+    background-color: rgb(255, 244, 244);
     flex: 75%;
     padding: 10px;
     border-radius: 10px;
