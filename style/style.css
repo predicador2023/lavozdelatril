@@ -269,6 +269,13 @@ video {
      margin-bottom: 15px;
      
     }
+
+    .botonSuscribete {
+        width: 80%;
+        margin-left: 30px;
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
     
    
     .contenedorHistorias {
