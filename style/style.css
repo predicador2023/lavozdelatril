@@ -688,6 +688,10 @@ video {
                 margin-left: 0px;
                 margin-right: 0px;
             }
+
+            .separator {
+                width: 70%;
+            }
             aside {
               
                 flex-direction: column;
