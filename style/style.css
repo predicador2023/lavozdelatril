@@ -458,6 +458,45 @@ video {
                     .slider-Screen img {
                         width: 100%;
                     }
+
+
+                    /*contenedor nuevo   */
+                    .contenedorNuevo {
+                        margin-top: 5px;
+                        margin-left: 5px;
+                        background-color: rgb(52, 38, 68);
+                        padding: 10px;
+                        width: 300px;
+                        height: 125px;
+                        display: flex;
+                    }
+                    
+                    
+                    
+                    .imgtarjeta {
+                        width: 80px;
+                        height:110px;
+                        margin: 0 5px;
+                    }
+                    
+                    .texto {
+                        color: white;
+                        margin-left: 10px;
+                        /* flex-direction: column; */
+                    }
+                    
+                    h3 {
+                        text-size-adjust: auto;
+                       
+                        
+                    }
+                    .imgSvg {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 30px;
+                        margin-left: 15px;
+                       
+                    }
                         
 
 
