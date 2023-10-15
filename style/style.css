@@ -489,8 +489,14 @@ video {
                     h3 {
                         text-size-adjust: auto;
                         color: white;
+                        font-size: 15px;
                        
                         
+                    }
+
+                    p{
+                        font-size: 12px;
+                        color: rgb(194, 192, 159);
                     }
                     .imgSvg {
                         display: flex;
