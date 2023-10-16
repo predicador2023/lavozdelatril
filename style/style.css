@@ -484,15 +484,19 @@ video {
                     .texto {
                         color: white;
                         margin-left: 10px;
+                        
                         /* flex-direction: column; */
                     }
                     
-                    h3 {
+                   .texto h3 {
                         text-size-adjust: auto;
                         color: white;
-                        font-size: 15px;
+                        font-size: 16px; 
                        
-                        
+                    }
+
+                    .texto p {
+                        font-size: 13px;
                     }
 
                     .parraoConteNuevo{
