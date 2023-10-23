@@ -3,7 +3,7 @@
 const barraNav = document.querySelector("#barraNav");
 const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");
-const body = document.querySelector("#body");
+const body = document.querySelector ("#body");
 
 abrir.addEventListener("click", () => {
     barraNav.classList.add("visible");
@@ -66,4 +66,63 @@ cerrar.addEventListener("click", () =>  {
                 moverIzquierda();
                 Intervalo = setInterval( moverDerecha , 2500 ); 
                });
-          
+
+
+            //código corazón en la sección historias
+            // corazón blanco al dar clic se vuelva de color rojo
+
+                function mostrar() {
+
+                    document.getElementById('corazonrojo').style.display = 'block';
+                    document.getElementById('corazonblanco').style.display = 'none';
+            
+                }
+                
+                function mostrar1() {
+
+                    document.getElementById('corazonrojo2').style.display = 'block';
+                    document.getElementById('corazonblanco2').style.display = 'none';
+             
+               }
+
+               function mostrar2() {
+
+                document.getElementById('corazonrojo3').style.display = 'block';
+                document.getElementById('corazonblanco3').style.display = 'none';
+         
+           }
+
+           function mostrar3() {
+
+            document.getElementById('corazonrojo4').style.display = 'block';
+            document.getElementById('corazonblanco4').style.display = 'none';
+     
+       }
+
+       function mostrar4() {
+
+        document.getElementById('corazonrojo5').style.display = 'block';
+        document.getElementById('corazonblanco5').style.display = 'none';
+ 
+   }
+
+   function mostrar5() {
+
+    document.getElementById('corazonrojo6').style.display = 'block';
+    document.getElementById('corazonblanco6').style.display = 'none';
+
+}
+
+function mostrar6() {
+
+    document.getElementById('corazonrojo7').style.display = 'block';
+    document.getElementById('corazonblanco7').style.display = 'none';
+
+}
+
+
+
+
+   
+            
+               
