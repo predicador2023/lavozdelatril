@@ -70,12 +70,19 @@ cerrar.addEventListener("click", () =>  {
 
             //código corazón en la sección historias
             // corazón blanco al dar clic se vuelva de color rojo
-
+             // corazón rojo al dar clic se vuelva de color blanco
                 function mostrar() {
 
                     document.getElementById('corazonrojo').style.display = 'block';
                     document.getElementById('corazonblanco').style.display = 'none';
             
+                }
+
+                function ocultar() {
+
+                    document.getElementById('corazonblanco').style.display = 'block';
+                    document.getElementById('corazonrojo').style.display = 'none';
+                
                 }
                 
                 function mostrar1() {
@@ -85,12 +92,26 @@ cerrar.addEventListener("click", () =>  {
              
                }
 
+               function ocultar1() {
+
+                document.getElementById('corazonblanco2').style.display = 'block';
+                document.getElementById('corazonrojo2').style.display = 'none';
+            
+            }
+
                function mostrar2() {
 
                 document.getElementById('corazonrojo3').style.display = 'block';
                 document.getElementById('corazonblanco3').style.display = 'none';
          
            }
+
+           function ocultar2() {
+
+            document.getElementById('corazonblanco3').style.display = 'block';
+            document.getElementById('corazonrojo3').style.display = 'none';
+        
+        }
 
            function mostrar3() {
 
@@ -99,6 +120,13 @@ cerrar.addEventListener("click", () =>  {
      
        }
 
+       function ocultar3() {
+
+        document.getElementById('corazonblanco4').style.display = 'block';
+        document.getElementById('corazonrojo4').style.display = 'none';
+    
+    }
+
        function mostrar4() {
 
         document.getElementById('corazonrojo5').style.display = 'block';
@@ -106,10 +134,24 @@ cerrar.addEventListener("click", () =>  {
  
    }
 
+   function ocultar4() {
+
+    document.getElementById('corazonblanco5').style.display = 'block';
+    document.getElementById('corazonrojo5').style.display = 'none';
+
+}
+
    function mostrar5() {
 
     document.getElementById('corazonrojo6').style.display = 'block';
     document.getElementById('corazonblanco6').style.display = 'none';
+
+}
+
+function ocultar5() {
+
+    document.getElementById('corazonblanco6').style.display = 'block';
+    document.getElementById('corazonrojo6').style.display = 'none';
 
 }
 
@@ -120,6 +162,12 @@ function mostrar6() {
 
 }
 
+function ocultar6() {
+
+    document.getElementById('corazonblanco7').style.display = 'block';
+    document.getElementById('corazonrojo7').style.display = 'none';
+
+}
 
 
 
