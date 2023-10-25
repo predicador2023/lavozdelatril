@@ -18,54 +18,54 @@ cerrar.addEventListener("click", () =>  {
 // -----------------------------------------------------------
 // silder de imagenes en seccion acerca de
 
-    var imagenes = [ "imagenesSlider/cruzJesus.jpg" , 
-         "imagenesSlider/mesaBiblia.jpg" , 
-         "imagenesSlider/niñoBiblia.jpg", 
-          "imagenesSlider/tresCruz.jpg"];
-        document.Imagen.src = imagenes[0];
+    // var imagenes = [ "imagenesSlider/cruzJesus.jpg" , 
+    //      "imagenesSlider/mesaBiblia.jpg" , 
+    //      "imagenesSlider/niñoBiblia.jpg", 
+    //       "imagenesSlider/tresCruz.jpg"];
+    //     document.Imagen.src = imagenes[0];
 
-        var contador= 0;
+    //     var contador= 0;
 
     
-        var sliderDerecha = document.querySelector(".slider-Derecho");
-        var sliderIzquierda = document.querySelector(".slider-Izquierdo");
-         function moverDerecha ( ) {
-            contador ++ ;
-            if (contador > imagenes.length -1){
-                contador=0;
-            }
+    //     var sliderDerecha = document.querySelector(".slider-Derecho");
+    //     var sliderIzquierda = document.querySelector(".slider-Izquierdo");
+    //      function moverDerecha ( ) {
+    //         contador ++ ;
+    //         if (contador > imagenes.length -1){
+    //             contador=0;
+    //         }
             
-            document.Imagen.src = imagenes[contador];
+    //         document.Imagen.src = imagenes[contador];
 
-         }
+    //      }
 
-         function moverIzquierda ( ) {
-            contador -- ;
-            if (contador < 0){
-                contador=imagenes.length -1;
-            }
-            document.Imagen.src = imagenes[contador];
+    //      function moverIzquierda ( ) {
+    //         contador -- ;
+    //         if (contador < 0){
+    //             contador=imagenes.length -1;
+    //         }
+    //         document.Imagen.src = imagenes[contador];
 
-        }
+    //     }
             
             
             
-                // para que se actualice cada 2,5 segundos cada imagen
-                //Al momento de darle click antes de los 2,5 segundos se pueda actualizar 
+    //             // para que se actualice cada 2,5 segundos cada imagen
+    //             //Al momento de darle click antes de los 2,5 segundos se pueda actualizar 
                 
-                var Intervalo = setInterval( moverDerecha , 2500 );
+    //             var Intervalo = setInterval( moverDerecha , 2500 );
 
-                sliderDerecha.addEventListener( "click" , function () {
-                clearInterval(Intervalo);
-                moverDerecha();
-                Intervalo = setInterval( moverDerecha , 2500 );
-                 } );
+    //             sliderDerecha.addEventListener( "click" , function () {
+    //             clearInterval(Intervalo);
+    //             moverDerecha();
+    //             Intervalo = setInterval( moverDerecha , 2500 );
+    //              } );
 
-                sliderIzquierda.addEventListener( "click" , function () {
-                clearInterval(Intervalo);
-                moverIzquierda();
-                Intervalo = setInterval( moverDerecha , 2500 ); 
-               });
+    //             sliderIzquierda.addEventListener( "click" , function () {
+    //             clearInterval(Intervalo);
+    //             moverIzquierda();
+    //             Intervalo = setInterval( moverDerecha , 2500 ); 
+    //            });
 
 
             //código corazón en la sección historias
@@ -172,10 +172,10 @@ function ocultar6() {
     //imagen de compartir
     //codigo para compartir desde nuestro celular
 
-    const Compartir = document.querySelector('#compartir')
-    if ('share' in navegator) { 
-    Compartir.addEventListener('click', share)
-    function share () {
+    const $compartir = document.querySelector('#compartir')
+    if ('share' in navigator) { 
+        $compartir.addEventListener('click', share)
+        function share () {
                 navigator.share ({
                     title: 'Comparte La Voz del Atril' ,
                     text: 'Relatos llenos de emoción y sentimiento',
@@ -189,7 +189,8 @@ function ocultar6() {
                     alert('no se pudo compartir, prueba usando https en un navegador móvil')
                   })
                 }
-              } else {
+              } 
+              else {
                 alert('No está disponible el API de web share')
               }
 
