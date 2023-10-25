@@ -178,8 +178,8 @@ function ocultar6() {
         function share () {
                 navigator.share ({
                     title: 'Comparte La Voz del Atril' ,
-                    text: 'Relatos llenos de emoción y sentimiento',
-                    url: 'https://lavozdelatril.vercel.app/' ,
+                    text: 'La Voz del atril-Relatos llenos de emoción y sentimiento',
+                    url: 'https://lavozdelatril.vercel.app/laLunaDePaita.html' ,
 
                 })
                 .then(()=>{
@@ -195,7 +195,27 @@ function ocultar6() {
               }
 
              
-
+              const $compartir2 = document.querySelector('#compartir2')
+              if ('share' in navigator) { 
+                  $compartir2.addEventListener('click', share)
+                  function share () {
+                          navigator.share ({
+                              title: 'Comparte La Voz del Atril' ,
+                              text: 'La Voz del Atril-Relatos llenos de emoción y sentimiento',
+                              url: 'https://lavozdelatril.vercel.app/LaHuidaEgipto.html' ,
+          
+                          })
+                          .then(()=>{
+                              alert('Hemos logrado compartir')
+                            })
+                            .catch(()=>{
+                              alert('no se pudo compartir, prueba usando https en un navegador móvil')
+                            })
+                          }
+                        } 
+                        else {
+                          alert('No está disponible el API de web share')
+                        }
 
 
 
