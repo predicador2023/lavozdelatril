@@ -602,6 +602,12 @@ video {
                     #corazonrojo7 {
                         display: none;
                     }
+
+                    /* boton compartir  para pc no aparece*/
+
+                    #compartir {
+                        display: none;
+                    }
                         
 
 
@@ -619,6 +625,10 @@ video {
         width: 280px;
     }
     }
+    
+    
+    
+
 
     @media screen and  (max-width:850px )
     
@@ -847,6 +857,7 @@ video {
                 flex-direction: column;
                 justify-content: center;
             }
+            
             .videoHistorias {
                 justify-content: center;
                 align-items: center;
@@ -854,6 +865,11 @@ video {
                 margin: 10px;
                 
             }
+              
+             #compartir {
+             display: block;
+            }
+
 
             footer  {
                 width: 100%;

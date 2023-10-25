@@ -169,6 +169,34 @@ function ocultar6() {
 
 }
 
+    //imagen de compartir
+    //codigo para compartir desde nuestro celular
+
+    const Compartir = document.querySelector('#compartir')
+    if ('share' in navegator) { 
+    Compartir.addEventListener('click', share)
+    function share () {
+                navigator.share ({
+                    title: 'Comparte La Voz del Atril' ,
+                    text: 'Relatos llenos de emoción y sentimiento',
+                    url: 'https://lavozdelatril.vercel.app/' ,
+
+                })
+                .then(()=>{
+                    alert('hemos logrado compartir')
+                  })
+                  .catch(()=>{
+                    alert('no se pudo compartir, prueba usando https en un navegador móvil')
+                  })
+                }
+              } else {
+                alert('No está disponible el API de web share')
+              }
+
+             
+
+
+
 
 
    
