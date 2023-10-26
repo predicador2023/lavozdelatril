@@ -178,7 +178,7 @@ function ocultar6() {
         function share () {
                 navigator.share ({
                     title: 'Comparte La Voz del Atril' ,
-                    text: 'La Voz del atril-Relatos llenos de emoción y sentimiento',
+                    text: 'La Luna de Paita - La Voz del Atril',
                     url: 'https://lavozdelatril.vercel.app/laLunaDePaita.html' ,
 
                 })
@@ -195,30 +195,141 @@ function ocultar6() {
               }
 
              
-              const $compartir2 = document.querySelector('#compartir2')
-              if ('share' in navigator) { 
-                  $compartir2.addEventListener('click', share)
-                  function share () {
-                          navigator.share ({
-                              title: 'Comparte La Voz del Atril' ,
-                              text: 'La Voz del Atril-Relatos llenos de emoción y sentimiento',
-                              url: 'https://lavozdelatril.vercel.app/LaHuidaEgipto.html' ,
-          
-                          })
-                          .then(()=>{
-                              alert('Hemos logrado compartir')
-                            })
-                            .catch(()=>{
-                              alert('no se pudo compartir, prueba usando https en un navegador móvil')
-                            })
-                          }
-                        } 
-                        else {
-                          alert('No está disponible el API de web share')
-                        }
+                    const $compartir2 = document.querySelector('#compartir2')
+                    if ('share' in navigator) { 
+                        $compartir2.addEventListener('click', share)
+                        function share () {
+                                navigator.share ({
+                                    title: 'Comparte La Voz del Atril' ,
+                                    text: 'La Huida a Egipto - La Voz del Atril',
+                                    url: 'https://lavozdelatril.vercel.app/LaHuidaEgipto.html' ,
+                
+                                })
+                                .then(()=>{
+                                    alert('Hemos logrado compartir')
+                                    })
+                                    .catch(()=>{
+                                    alert('no se pudo compartir, prueba usando https en un navegador móvil')
+                                    })
+                                }
+                                } 
+                                else {
+                                alert('No está disponible el API de web share')
+                                }
 
+                                const $compartir3 = document.querySelector('#compartir3')
+                                if ('share' in navigator) { 
+                                    $compartir3.addEventListener('click', share)
+                                    function share () {
+                                            navigator.share ({
+                                                title: 'Comparte La Voz del Atril' ,
+                                                text: 'La Plaza de los Burros - La Voz del Atril',
+                                                url: 'https://lavozdelatril.vercel.app/LaPlazaDeLosBurros.html' ,
+                            
+                                            })
+                                            .then(()=>{
+                                                alert('Hemos logrado compartir')
+                                              })
+                                              .catch(()=>{
+                                                alert('no se pudo compartir, prueba usando https en un navegador móvil')
+                                              })
+                                            }
+                                          } 
+                                          else {
+                                            alert('No está disponible el API de web share')
+                                          }
+                  
+                                          const $compartir4 = document.querySelector('#compartir4')
+                                          if ('share' in navigator) { 
+                                              $compartir4.addEventListener('click', share)
+                                              function share () {
+                                                      navigator.share ({
+                                                          title: 'Comparte La Voz del Atril' ,
+                                                          text: 'Una Lección de Ajedrez - La Voz del Atril',
+                                                          url: 'https://lavozdelatril.vercel.app/unaLeccionDeAjedrez.html' ,
+                                      
+                                                      })
+                                                      .then(()=>{
+                                                          alert('Hemos logrado compartir')
+                                                        })
+                                                        .catch(()=>{
+                                                          alert('no se pudo compartir, prueba usando https en un navegador móvil')
+                                                        })
+                                                      }
+                                                    } 
+                                                    else {
+                                                      alert('No está disponible el API de web share')
+                                                    }
 
+                                                    const $compartir5 = document.querySelector('#compartir5')
+                                                    if ('share' in navigator) { 
+                                                        $compartir5.addEventListener('click', share)
+                                                        function share () {
+                                                                navigator.share ({
+                                                                    title: 'Comparte La Voz del Atril' ,
+                                                                    text: 'El Caramelo en La Mano - La Voz del Atril',
+                                                                    url: 'https://lavozdelatril.vercel.app/elCarameloEnLaMano.html' ,
+                                                
+                                                                })
+                                                                .then(()=>{
+                                                                    alert('Hemos logrado compartir')
+                                                                  })
+                                                                  .catch(()=>{
+                                                                    alert('no se pudo compartir, prueba usando https en un navegador móvil')
+                                                                  })
+                                                                }
+                                                              } 
+                                                              else {
+                                                                alert('No está disponible el API de web share')
+                                                              }
 
+                                                              const $compartir6 = document.querySelector('#compartir6')
+                                                              if ('share' in navigator) { 
+                                                                  $compartir6.addEventListener('click', share)
+                                                                  function share () {
+                                                                          navigator.share ({
+                                                                              title: 'Comparte La Voz del Atril' ,
+                                                                              text: 'La Hormiga en La Oreja - La Voz del Atril',
+                                                                              url: 'https://lavozdelatril.vercel.app/laHormigaEnLaOreja.html' ,
+                                                          
+                                                                          })
+                                                                          .then(()=>{
+                                                                              alert('Hemos logrado compartir')
+                                                                            })
+                                                                            .catch(()=>{
+                                                                              alert('no se pudo compartir, prueba usando https en un navegador móvil')
+                                                                            })
+                                                                          }
+                                                                        } 
+                                                                        else {
+                                                                          alert('No está disponible el API de web share')
+                                                                        }
+                                                
+                                      
+                                                                        const $compartir7 = document.querySelector('#compartir7')
+                                                              if ('share' in navigator) { 
+                                                                  $compartir7.addEventListener('click', share)
+                                                                  function share () {
+                                                                          navigator.share ({
+                                                                              title: 'Comparte La Voz del Atril' ,
+                                                                              text: 'La Alfombra Roja  - La Voz del Atril',
+                                                                              url: 'https://lavozdelatril.vercel.app/laHormigaEnLaOreja.html' ,
+                                                          
+                                                                          })
+                                                                          .then(()=>{
+                                                                              alert('Hemos logrado compartir')
+                                                                            })
+                                                                            .catch(()=>{
+                                                                              alert('no se pudo compartir, prueba usando https en un navegador móvil')
+                                                                            })
+                                                                          }
+                                                                        } 
+                                                                        else {
+                                                                          alert('No está disponible el API de web share')
+                                                                        }
+                                                
+                                      
+                            
 
    
             

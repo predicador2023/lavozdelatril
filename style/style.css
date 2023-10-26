@@ -606,7 +606,7 @@ video {
                     /* boton compartir  para pc no aparece*/
 
                     #compartir {
-                        display: none;
+                        display: block;
                     }
                         
 
@@ -857,7 +857,7 @@ video {
                 flex-direction: column;
                 justify-content: center;
             }
-            
+
             .videoHistorias {
                 justify-content: center;
                 align-items: center;
