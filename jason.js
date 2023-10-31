@@ -195,73 +195,10 @@ function ocultar6() {
                 alert('No está disponible el API de web share')
               }
     
-              const $compartirBarraNavAcerca = document.querySelector('#compartirBarraNavAcerca')
-              if ('share' in navigator) { 
-                  $compartirBarraNavAcerca.addEventListener('click', share)
-                  function share () {
-                          navigator.share ({
-                              title: 'Comparte La Voz del Atril' ,
-                              text: 'La Voz del Atril - Historias llenas de emoción y sentimiento',
-                              url: 'https://lavozdelatril.vercel.app/' ,
-          
-                          })
-                          .then(()=>{
-                              alert('hemos logrado compartir')
-                            })
-                            .catch(()=>{
-                              alert('no se pudo compartir, prueba usando https en un navegador móvil')
-                            })
-                          }
-                        } 
-                        else {
-                          alert('No está disponible el API de web share')
-                        }
+            
 
 
-                        const $compartirBarraNavHistorias = document.querySelector('#compartirBarraNavHistorias')
-                        if ('share' in navigator) { 
-                            $compartirBarraNavHistorias.addEventListener('click', share)
-                            function share () {
-                                    navigator.share ({
-                                        title: 'Comparte La Voz del Atril' ,
-                                        text: 'La Voz del Atril - Historias llenas de emoción y sentimiento',
-                                        url: 'https://lavozdelatril.vercel.app/historias.html/' ,
-                    
-                                    })
-                                    .then(()=>{
-                                        alert('hemos logrado compartir')
-                                      })
-                                      .catch(()=>{
-                                        alert('no se pudo compartir, prueba usando https en un navegador móvil')
-                                      })
-                                    }
-                                  } 
-                                  else {
-                                    alert('No está disponible el API de web share')
-                                  }  
-                                  
-                                  const $compartirBarraNavPeliculas = document.querySelector('#compartirBarraNavPeliculas')
-                                  if ('share' in navigator) { 
-                                      $compartirBarraNavPeliculas.addEventListener('click', share)
-                                      function share () {
-                                              navigator.share ({
-                                                  title: 'Comparte La Voz del Atril' ,
-                                                  text: 'La Voz del Atril - Historias llenas de emoción y sentimiento',
-                                                  url: 'https://lavozdelatril.vercel.app/peliculas.html/' ,
-                              
-                                              })
-                                              .then(()=>{
-                                                  alert('hemos logrado compartir')
-                                                })
-                                                .catch(()=>{
-                                                  alert('no se pudo compartir, prueba usando https en un navegador móvil')
-                                                })
-                                              }
-                                            } 
-                                            else {
-                                              alert('No está disponible el API de web share')
-                                            }
-
+                        
     const $compartir = document.querySelector('#compartir')
     if ('share' in navigator) { 
         $compartir.addEventListener('click', share)
