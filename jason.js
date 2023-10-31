@@ -225,7 +225,7 @@ function ocultar6() {
                                     navigator.share ({
                                         title: 'Comparte La Voz del Atril' ,
                                         text: 'La Voz del Atril - Historias llenas de emoción y sentimiento',
-                                        url: 'https://lavozdelatril.vercel.app/historias.html' ,
+                                        url: 'https://lavozdelatril.vercel.app/historias.html/' ,
                     
                                     })
                                     .then(()=>{
@@ -247,7 +247,7 @@ function ocultar6() {
                                               navigator.share ({
                                                   title: 'Comparte La Voz del Atril' ,
                                                   text: 'La Voz del Atril - Historias llenas de emoción y sentimiento',
-                                                  url: 'https://lavozdelatril.vercel.app/peliculas.html' ,
+                                                  url: 'https://lavozdelatril.vercel.app/peliculas.html/' ,
                               
                                               })
                                               .then(()=>{
