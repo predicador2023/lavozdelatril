@@ -708,7 +708,7 @@ video {
         left: 100%;
         transition: left 0.3s;
         /* height: calc(100%-95.16px); */
-        height: calc(100%-76.09px);
+        height: calc(100%-76.08px);
         overflow-y: auto;
     }
     .barraNav.visible {
