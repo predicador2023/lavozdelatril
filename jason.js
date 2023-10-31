@@ -216,6 +216,8 @@ function ocultar6() {
                         else {
                           alert('No está disponible el API de web share')
                         }
+
+
                         const $compartirBarraNavHistorias = document.querySelector('#compartirBarraNavHistorias')
                         if ('share' in navigator) { 
                             $compartirBarraNavHistorias.addEventListener('click', share)
