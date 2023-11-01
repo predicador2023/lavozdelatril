@@ -6,9 +6,7 @@
 
     
 }
-.bodyHistorias {
-    background-color: #f5f6f7;
-}
+
 
 
 header {
@@ -723,6 +721,7 @@ video {
         overflow: hidden;
 
     }
+   
 
       .menuDesplegable { 
         /* font-size: 14px; */
@@ -871,9 +870,7 @@ video {
                 
             }
               
-             #compartir {
-             display: block;
-            }
+           
 
 
             footer  {
