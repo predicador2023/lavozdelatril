@@ -615,7 +615,20 @@ video {
          .imagenBoletin {
             width: 100%;
             margin-bottom: 10px;
-         }           
+            position: relative;
+         }   
+         
+         .suscribete {
+            position: absolute;
+            left: 75%;
+            top: 64%;
+            
+         }
+
+         .botonSuscribete {
+            width: 150px;
+         }
+         
 
     @media screen and  (min-width: 260px) and ( max-width:528px ){
     
