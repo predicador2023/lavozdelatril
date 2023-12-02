@@ -156,17 +156,17 @@ header img {
 
 .contenedor div{
     flex-direction: column;
-    flex: 75%;
+    flex: 68%;
 }
 aside {
     background-color: rgb(227, 252, 252);
-    flex: 25%;
+    flex: 32%;
     padding: 20px;
     border-radius: 10px;
 }
 
     .contenedor video {
-    width: 80%;
+    width: 85%;
     height: auto;
    
 }
