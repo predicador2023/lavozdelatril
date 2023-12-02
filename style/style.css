@@ -611,22 +611,26 @@ video {
                         fill: red;
                         
                     }
-                        
+
+
+         .boletin{
+            position: relative;
+         }               
          .imagenBoletin {
             width: 100%;
             margin-bottom: 10px;
-            position: relative;
+            /* position: relative; */
          }   
          
          .suscribete {
             position: absolute;
-            left: 75%;
-            top: 64%;
+            top: 35%;
+            left: 0%;
             
          }
 
          .botonSuscribete {
-            width: 150px;
+         width: 40%;
          }
          
 
