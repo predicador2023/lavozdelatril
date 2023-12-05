@@ -633,6 +633,30 @@ video {
          width: 40%;
          }
 
+     .contenedorBotonCompartir {
+        background-color: rgb(5, 5, 73);
+        width: 65px;
+        
+        display: flex;
+        margin: 15px;
+        cursor: pointer;
+       justify-content: center;
+       text-align: center;
+       align-items: center;
+        border-radius: 4px;
+        padding: 5px 2px;
+        
+       
+     } 
+
+     
+     /* .textoBotonCompartir { 
+        font-size: 19px;
+        color: white;
+        display: flex;
+        margin: 0;
+        
+     }*/
          
 
     @media screen and  (min-width: 260px) and ( max-width:528px ){
