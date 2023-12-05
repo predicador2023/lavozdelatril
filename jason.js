@@ -171,6 +171,27 @@ function ocultar6() {
 
     //imagen de compartir
     //codigo para compartir desde nuestro celular
+    const $compartirBoton1 = document.querySelector('#compartirBoton1')
+    if ('share' in navigator) { 
+        $compartirBoton1.addEventListener('click', share)
+        function share () {
+                navigator.share ({
+                    title: 'Comparte La Voz del Atril' ,
+                    text: 'La Plaza de los Burros - La Voz del Atril',
+                    url: 'https://lavozdelatril.vercel.app/LaPlazaDeLosBurros.html' ,
+
+                })
+                .then(()=>{
+                    alert('Hemos logrado compartir')
+                  })
+                  .catch(()=>{
+                    alert('no se pudo compartir, prueba usando https en un navegador móvil')
+                  })
+                }
+              } 
+              else {
+                alert('No está disponible el API de web share')
+              }
 
 
 
