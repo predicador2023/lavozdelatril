@@ -172,7 +172,7 @@ function ocultar6() {
 
     //imagen de compartir
     //codigo para compartir desde nuestro celular
-    const $compartirBoton1 = document.querySelector('#compartirBoton1')
+  /*  const $compartirBoton1 = document.querySelector('#compartirBoton1')
     if ('share' in navigator) { 
         $compartirBoton1.addEventListener('click', share)
         function share () {
@@ -330,6 +330,8 @@ function ocultar6() {
                                          alert('No está disponible el API de web share')
                                             }    
 
+        
+       */                                     
 
     const $compartir = document.querySelector('#compartir')
     if ('share' in navigator) { 
