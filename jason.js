@@ -71,6 +71,7 @@ cerrar.addEventListener("click", () =>  {
             //código corazón en la sección historias
             // corazón blanco al dar clic se vuelva de color rojo
              // corazón rojo al dar clic se vuelva de color blanco
+             
                 function mostrar() {
 
                     document.getElementById('corazonrojo').style.display = 'block';
@@ -192,6 +193,8 @@ function ocultar6() {
               else {
                 alert('No está disponible el API de web share')
               }
+
+
               const $compartirBoton2 = document.querySelector('#compartirBoton2')
               if ('share' in navigator) { 
                   $compartirBoton2.addEventListener('click', share)
@@ -239,12 +242,12 @@ function ocultar6() {
             
       const $compartirBoton4 = document.querySelector('#compartirBoton4')
         if ('share' in navigator) { 
-                            $compartirBoton4.addEventListener('click', share)
-                            function share () {
-                                    navigator.share ({
-                                        title: 'Comparte La Voz del Atril' ,
-                                        text: 'La Hormiga en La Oreja - La Voz del Atril',
-                                        url: 'https://lavozdelatril.vercel.app/laHormigaEnLaOreja.html' ,
+              $compartirBoton4.addEventListener('click', share)
+                       function share () {
+                            navigator.share ({
+                                 title: 'Comparte La Voz del Atril' ,
+                                 text: 'La Hormiga en La Oreja - La Voz del Atril',
+                                  url: 'https://lavozdelatril.vercel.app/laHormigaEnLaOreja.html' ,
                     
                                     })
                                     .then(()=>{
@@ -326,7 +329,7 @@ function ocultar6() {
                                       else {
                                          alert('No está disponible el API de web share')
                                             }    
-                                                                        
+
 
     const $compartir = document.querySelector('#compartir')
     if ('share' in navigator) { 
