@@ -541,7 +541,7 @@ video {
                         justify-content: space-between;
                         margin-top: 30px;
                         margin-left: 15px;
-                        background-color: black;
+                        
                        
                     }
 
@@ -603,9 +603,14 @@ video {
                     }
 
                     /* boton compartir  para pc no aparece*/
+                    .botonCompartir {
+                        background-color: red;
+                        width: 24px;
+                    }
 
                     #compartir {
                         display: block;
+                        
                     }
                     .imgShare:active {
                         color: yellowgreen;
