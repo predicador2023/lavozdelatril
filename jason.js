@@ -15,6 +15,23 @@ cerrar.addEventListener("click", () =>  {
     body.classList.remove("no-scroll");
 })
 
+// Intersection Observer
+const Mivideo = document.querySelector("#video")
+const options = {
+ // root,
+  rootMargin:"0px 0px 0px 0px" ,
+  threshold: 0.3 ,
+}
+function callback(entries, observer) {
+ console.log("Se llamó a mi callback")
+ if(entries[0].isIntersecting) {
+ Mivideo.play() }
+ else {
+ Mivideo.pause() }
+}
+const observer = new IntersectionObserver (callback, options) 
+  observer.observe(Mivideo)
+
 // -----------------------------------------------------------
 // silder de imagenes en seccion acerca de
 
