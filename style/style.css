@@ -659,7 +659,7 @@ video {
      
      /* footer*/
      footer {
-        justify-content: space-evenly;
+        justify-content: space-around;
      }
     .contenedorGeneral h3 {
        margin-left: 15px;
@@ -674,6 +674,14 @@ video {
         align-items: center;
     
              }
+      .fa-brands   {
+        text-decoration : none;
+        font-size: 23px;
+       
+        color: rgb(228, 227, 255);
+        border-radius: 50%;
+
+      }       
          
 
     @media screen and  (min-width: 260px) and ( max-width:528px ){
