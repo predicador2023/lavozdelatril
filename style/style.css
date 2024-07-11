@@ -767,11 +767,11 @@ video {
         /* visibility: hidden; */
       
         font-family: 'Jura', sans-serif;
-       color: white;
+        color: white;
         position: fixed;
         right: 0;
         /* left: 0; */
-        top: 76.16px;
+        top :69.88px;
         background-color: #182229;
         border-radius: 5px;
         bottom: 0;
@@ -783,7 +783,7 @@ video {
         left: 100%;
         transition: left 0.3s;
         /* height: calc(100%-95.16px); */
-        height: calc(100%-76.08px);
+        height: calc(100%-70.08px);
         overflow-y: auto;
     }
     .barraNav.visible {
