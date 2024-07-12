@@ -90,6 +90,7 @@ header img {
     --clip: polygon(0 0, 100% 0, 100% 0, 0 0); 
     align-items: center;
     justify-content: center;
+    margin-top: 7px;
   
  }
 
@@ -824,6 +825,7 @@ video {
             font-size: 15px;
             justify-content: flex-start;
             font-family: 'Jura', sans-serif;
+            /* margin-top: 20px; */
             /* margin-right: px; */
         }
 
@@ -832,6 +834,7 @@ video {
         padding: 5px;
         align-items: flex-start;
         justify-content: left;
+       
     }
 
    
