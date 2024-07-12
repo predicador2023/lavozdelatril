@@ -346,11 +346,9 @@ function ocultar6() {
                                       else {
                                          alert('No está disponible el API de web share')
                                             }    
-
-        
        */                                     
 
-    const $compartir = document.querySelector('#compartir')
+   const $compartir = document.querySelector('#compartir')
     if ('share' in navigator) { 
         $compartir.addEventListener('click', share)
         function share () {
