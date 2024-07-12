@@ -371,14 +371,14 @@ function ocultar6() {
               }
 
              
-                    const $compartir2 = document.querySelector('#compartir2')
-                    if ('share' in navigator) { 
-                        $compartir2.addEventListener('click', share)
-                        function share () {
-                                navigator.share ({
-                                    title: 'Comparte La Voz del Atril' ,
-                                    text: 'La Huida a Egipto - La Voz del Atril',
-                                    url: 'https://lavozdelatril.vercel.app/LaHuidaEgipto.html' ,
+     const $compartir2 = document.querySelector('#compartir2')
+            if ('share' in navigator) { 
+                $compartir2.addEventListener('click', share)
+                function share () {
+                     navigator.share ({
+                     title: 'Comparte La Voz del Atril' ,
+                     text: 'La Huida a Egipto - La Voz del Atril',
+                     url: 'https://lavozdelatril.vercel.app/LaHuidaEgipto.html' ,
                 
                                 })
                                 .then(()=>{
@@ -393,14 +393,14 @@ function ocultar6() {
                                 alert('No está disponible el API de web share')
                                 }
 
-                                const $compartir3 = document.querySelector('#compartir3')
-                                if ('share' in navigator) { 
-                                    $compartir3.addEventListener('click', share)
-                                    function share () {
-                                            navigator.share ({
-                                                title: 'Comparte La Voz del Atril' ,
-                                                text: 'La Plaza de los Burros - La Voz del Atril',
-                                                url: 'https://lavozdelatril.vercel.app/LaPlazaDeLosBurros.html' ,
+     const $compartir3 = document.querySelector('#compartir3')
+                     if ('share' in navigator) { 
+                         $compartir3.addEventListener('click', share)
+                          function share () {
+                               navigator.share ({
+                                  title: 'Comparte La Voz del Atril' ,
+                                   text: 'La Plaza de los Burros - La Voz del Atril',
+                                   url: 'https://lavozdelatril.vercel.app/LaPlazaDeLosBurros.html' ,
                             
                                             })
                                             .then(()=>{
@@ -415,14 +415,14 @@ function ocultar6() {
                                             alert('No está disponible el API de web share')
                                           }
                   
-                                          const $compartir4 = document.querySelector('#compartir4')
-                                          if ('share' in navigator) { 
-                                              $compartir4.addEventListener('click', share)
-                                              function share () {
-                                                      navigator.share ({
-                                                          title: 'Comparte La Voz del Atril' ,
-                                                          text: 'Una Lección de Ajedrez - La Voz del Atril',
-                                                          url: 'https://lavozdelatril.vercel.app/unaLeccionDeAjedrez.html' ,
+       const $compartir4 = document.querySelector('#compartir4')
+               if ('share' in navigator) { 
+                  $compartir4.addEventListener('click', share)
+                         function share () {
+                         navigator.share ({
+                         title: 'Comparte La Voz del Atril' ,
+                         text: 'Una Lección de Ajedrez - La Voz del Atril',
+                         url: 'https://lavozdelatril.vercel.app/unaLeccionDeAjedrez.html' ,
                                       
                                                       })
                                                       .then(()=>{
