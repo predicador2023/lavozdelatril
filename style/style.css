@@ -295,7 +295,7 @@ video {
     }
 
     .botonSuscribete {
-        width: 80%;
+        width: 75%;
         margin-left: 30px;
         margin-right: auto;
         margin-bottom: 15px;
@@ -639,9 +639,7 @@ video {
             
          }
 
-         .botonSuscribete {
-         width: 40%;
-         }
+       
 
      .contenedorBotonCompartir {
         background-color: rgb(5, 5, 73);
