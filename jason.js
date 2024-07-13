@@ -95,7 +95,7 @@ const observer = new IntersectionObserver (callback, options)
   url: "https://lavozdelatril.vercel.app/laLunaDePaita.html",
 };
 
-const btn = document.querySelector('#compRelato');
+const btn = document.getElementById('#compRelato');
  const resultPara = document.querySelector(".result");
 
 // Share must be triggered by "user activation"
