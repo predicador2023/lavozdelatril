@@ -215,9 +215,9 @@ function ocultar6() {
 
     //imagen de compartir
     //codigo para compartir desde nuestro celular
- const $compartirRelato= document.querySelector('#comparteRelato')
+ const $compRelato= document.querySelector ('#compRelato')
     if ('share' in navigator) { 
-        $compartirRelato.addEventListener('click', share)
+        $compRelato.addEventListener('click', share)
         function share () {
                 navigator.share ({
                     title: 'Comparte La Voz del Atril' ,
@@ -233,7 +233,7 @@ function ocultar6() {
                   })
                 }
               
-     else {
+           } else {
                 alert('No está disponible el API de web share')
               }
 
