@@ -96,17 +96,16 @@ const observer = new IntersectionObserver (callback, options)
 };
 
 const btn = document.querySelector("#compRelato");
-// const resultPara = document.querySelector(".result");
+ const resultPara = document.querySelector(".result");
 
 // Share must be triggered by "user activation"
 btn.addEventListener("click", async () => {
   try {
     await navigator.share(shareData);
-    alert('El relato se compartió exitosamente')
-   // resultPara.textContent = "La Luna de Paita se compartió satisfactoriamente";
+   resultPara.textContent = "La Luna de Paita se compartió satisfactoriamente";
   } catch (err) {
-    alert('No se pudo, `Error: ${err}` ')
-    //resultPara.textContent = `Error: ${err}`;
+
+    resultPara.textContent = `Error: ${err}`;
   }
 });
 
