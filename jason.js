@@ -88,64 +88,88 @@ const observer = new IntersectionObserver (callback, options)
             //código corazón en la sección historias
             // corazón blanco al dar clic se vuelva de color rojo
              // corazón rojo al dar clic se vuelva de color blanco
-             
-                function mostrar() {
 
-                    document.getElementById('corazonrojo').style.display = 'block';
-                    document.getElementById('corazonblanco').style.display = 'none';
+// -------------------------------------------------------------------
+ //Boton compartir relatos
+
+ const shareData = {
+  title: "MDN",
+  text: "Learn web development on MDN!",
+  url: "https://developer.mozilla.org",
+};
+
+const btn = document.querySelector("button");
+const resultPara = document.querySelector(".result");
+
+// Share must be triggered by "user activation"
+btn.addEventListener("click", async () => {
+  try {
+    await navigator.share(shareData);
+    resultPara.textContent = "MDN shared successfully";
+  } catch (err) {
+    resultPara.textContent = `Error: ${err}`;
+  }
+});
+
+
+ // Mostrar corazones            
+       function mostrar() {
+
+          document.getElementById('corazonrojo').style.display = 'block';
+         document.getElementById('corazonblanco').style.display = 'none';
             
                 }
 
-                function ocultar() {
+       function ocultar() {
 
-                    document.getElementById('corazonblanco').style.display = 'block';
-                    document.getElementById('corazonrojo').style.display = 'none';
+          document.getElementById('corazonblanco').style.display = 'block';
+          document.getElementById('corazonrojo').style.display = 'none';
                 
                 }
                 
-                function mostrar1() {
+       function mostrar1() {
 
-                    document.getElementById('corazonrojo2').style.display = 'block';
-                    document.getElementById('corazonblanco2').style.display = 'none';
+           document.getElementById('corazonrojo2').style.display = 'block';
+           document.getElementById('corazonblanco2').style.display = 'none';
              
                }
 
-               function ocultar1() {
+      function ocultar1() {
 
-                document.getElementById('corazonblanco2').style.display = 'block';
-                document.getElementById('corazonrojo2').style.display = 'none';
+           document.getElementById('corazonblanco2').style.display = 'block';
+          document.getElementById('corazonrojo2').style.display = 'none';
             
             }
 
-               function mostrar2() {
+      function mostrar2() {
 
-                document.getElementById('corazonrojo3').style.display = 'block';
-                document.getElementById('corazonblanco3').style.display = 'none';
+           document.getElementById('corazonrojo3').style.display = 'block';
+          document.getElementById('corazonblanco3').style.display = 'none';
          
            }
 
-           function ocultar2() {
+      function ocultar2() {
 
-            document.getElementById('corazonblanco3').style.display = 'block';
-            document.getElementById('corazonrojo3').style.display = 'none';
+         document.getElementById('corazonblanco3').style.display = 'block';
+        document.getElementById('corazonrojo3').style.display = 'none';
         
         }
 
-           function mostrar3() {
+     function mostrar3() {
 
-            document.getElementById('corazonrojo4').style.display = 'block';
-            document.getElementById('corazonblanco4').style.display = 'none';
+        document.getElementById('corazonrojo4').style.display = 'block';
+       document.getElementById('corazonblanco4').style.display = 'none';
      
        }
 
-       function ocultar3() {
+    function ocultar3() {
 
-        document.getElementById('corazonblanco4').style.display = 'block';
+       document.getElementById('corazonblanco4').style.display = 'block';
         document.getElementById('corazonrojo4').style.display = 'none';
     
     }
 
-       function mostrar4() {
+    function mostrar4() {
 
         document.getElementById('corazonrojo5').style.display = 'block';
         document.getElementById('corazonblanco5').style.display = 'none';
@@ -348,161 +372,161 @@ function ocultar6() {
                                             }    
        */                                     
 
-   const $compartir = document.querySelector('#compartir')
-    if ('share' in navigator) { 
-        $compartir.addEventListener('click', share)
-        function share () {
-                navigator.share ({
-                    title: 'Comparte La Voz del Atril' ,
-                    text: 'La Luna de Paita - La Voz del Atril',
-                    url: 'https://lavozdelatril.vercel.app/laLunaDePaita.html' ,
+  //  const $compartir = document.querySelector('#compartir')
+  //   if ('share' in navigator) { 
+  //       $compartir.addEventListener('click', share)
+  //       function share () {
+  //               navigator.share ({
+  //                   title: 'Comparte La Voz del Atril' ,
+  //                   text: 'La Luna de Paita - La Voz del Atril',
+  //                   url: 'https://lavozdelatril.vercel.app/laLunaDePaita.html' ,
 
-                })
-                .then(()=>{
-                    alert('hemos logrado compartir')
-                  })
-                  .catch(()=>{
-                    alert('no se pudo compartir, prueba usando https en un navegador móvil')
-                  })
-                }
-              } 
-              else {
-                alert('No está disponible el API de web share')
-              }
+  //               })
+  //               .then(()=>{
+  //                   alert('hemos logrado compartir')
+  //                 })
+  //                 .catch(()=>{
+  //                   alert('no se pudo compartir, prueba usando https en un navegador móvil')
+  //                 })
+  //               }
+  //             } 
+  //             else {
+  //               alert('No está disponible el API de web share')
+  //             }
 
              
-     const $compartir2 = document.querySelector('#compartir2')
-            if ('share' in navigator) { 
-                $compartir2.addEventListener('click', share)
-                function share () {
-                     navigator.share ({
-                     title: 'Comparte La Voz del Atril' ,
-                     text: 'La Huida a Egipto - La Voz del Atril',
-                     url: 'https://lavozdelatril.vercel.app/LaHuidaEgipto.html' ,
+  //    const $compartir2 = document.querySelector('#compartir2')
+  //           if ('share' in navigator) { 
+  //               $compartir2.addEventListener('click', share)
+  //               function share () {
+  //                    navigator.share ({
+  //                    title: 'Comparte La Voz del Atril' ,
+  //                    text: 'La Huida a Egipto - La Voz del Atril',
+  //                    url: 'https://lavozdelatril.vercel.app/LaHuidaEgipto.html' ,
                 
-                                })
-                                .then(()=>{
-                                    alert('Hemos logrado compartir')
-                                    })
-                                    .catch(()=>{
-                                    alert('no se pudo compartir, prueba usando https en un navegador móvil')
-                                    })
-                                }
-                                } 
-                                else {
-                                alert('No está disponible el API de web share')
-                                }
+  //                               })
+  //                               .then(()=>{
+  //                                   alert('Hemos logrado compartir')
+  //                                   })
+  //                                   .catch(()=>{
+  //                                   alert('no se pudo compartir, prueba usando https en un navegador móvil')
+  //                                   })
+  //                               }
+  //                               } 
+  //                               else {
+  //                               alert('No está disponible el API de web share')
+  //                               }
 
-     const $compartir3 = document.querySelector('#compartir3')
-                     if ('share' in navigator) { 
-                         $compartir3.addEventListener('click', share)
-                          function share () {
-                               navigator.share ({
-                                  title: 'Comparte La Voz del Atril' ,
-                                   text: 'La Plaza de los Burros - La Voz del Atril',
-                                   url: 'https://lavozdelatril.vercel.app/LaPlazaDeLosBurros.html' ,
+  //    const $compartir3 = document.querySelector('#compartir3')
+  //                    if ('share' in navigator) { 
+  //                        $compartir3.addEventListener('click', share)
+  //                         function share () {
+  //                              navigator.share ({
+  //                                 title: 'Comparte La Voz del Atril' ,
+  //                                  text: 'La Plaza de los Burros - La Voz del Atril',
+  //                                  url: 'https://lavozdelatril.vercel.app/LaPlazaDeLosBurros.html' ,
                             
-                                            })
-                                            .then(()=>{
-                                                alert('Hemos logrado compartir')
-                                              })
-                                              .catch(()=>{
-                                                alert('no se pudo compartir, prueba usando https en un navegador móvil')
-                                              })
-                                            }
-                                          } 
-                                          else {
-                                            alert('No está disponible el API de web share')
-                                          }
+  //                                           })
+  //                                           .then(()=>{
+  //                                               alert('Hemos logrado compartir')
+  //                                             })
+  //                                             .catch(()=>{
+  //                                               alert('no se pudo compartir, prueba usando https en un navegador móvil')
+  //                                             })
+  //                                           }
+  //                                         } 
+  //                                         else {
+  //                                           alert('No está disponible el API de web share')
+  //                                         }
                   
-       const $compartir4 = document.querySelector('#compartir4')
-               if ('share' in navigator) { 
-                  $compartir4.addEventListener('click', share)
-                         function share () {
-                         navigator.share ({
-                         title: 'Comparte La Voz del Atril' ,
-                         text: 'Una Lección de Ajedrez - La Voz del Atril',
-                         url: 'https://lavozdelatril.vercel.app/unaLeccionDeAjedrez.html' ,
+  //      const $compartir4 = document.querySelector('#compartir4')
+  //              if ('share' in navigator) { 
+  //                 $compartir4.addEventListener('click', share)
+  //                        function share () {
+  //                        navigator.share ({
+  //                        title: 'Comparte La Voz del Atril' ,
+  //                        text: 'Una Lección de Ajedrez - La Voz del Atril',
+  //                        url: 'https://lavozdelatril.vercel.app/unaLeccionDeAjedrez.html' ,
                                       
-                                                      })
-                                                      .then(()=>{
-                                                          alert('Hemos logrado compartir')
-                                                        })
-                                                        .catch(()=>{
-                                                          alert('no se pudo compartir, prueba usando https en un navegador móvil')
-                                                        })
-                                                      }
-                                                    } 
-                                                    else {
-                                                      alert('No está disponible el API de web share')
-                                                    }
+  //                                                     })
+  //                                                     .then(()=>{
+  //                                                         alert('Hemos logrado compartir')
+  //                                                       })
+  //                                                       .catch(()=>{
+  //                                                         alert('no se pudo compartir, prueba usando https en un navegador móvil')
+  //                                                       })
+  //                                                     }
+  //                                                   } 
+  //                                                   else {
+  //                                                     alert('No está disponible el API de web share')
+  //                                                   }
 
-                                                    const $compartir5 = document.querySelector('#compartir5')
-                                                    if ('share' in navigator) { 
-                                                        $compartir5.addEventListener('click', share)
-                                                        function share () {
-                                                                navigator.share ({
-                                                                    title: 'Comparte La Voz del Atril' ,
-                                                                    text: 'El Caramelo en La Mano - La Voz del Atril',
-                                                                    url: 'https://lavozdelatril.vercel.app/elCarameloEnLaMano.html' ,
+  //                                                   const $compartir5 = document.querySelector('#compartir5')
+  //                                                   if ('share' in navigator) { 
+  //                                                       $compartir5.addEventListener('click', share)
+  //                                                       function share () {
+  //                                                               navigator.share ({
+  //                                                                   title: 'Comparte La Voz del Atril' ,
+  //                                                                   text: 'El Caramelo en La Mano - La Voz del Atril',
+  //                                                                   url: 'https://lavozdelatril.vercel.app/elCarameloEnLaMano.html' ,
                                                 
-                                                                })
-                                                                .then(()=>{
-                                                                    alert('Hemos logrado compartir')
-                                                                  })
-                                                                  .catch(()=>{
-                                                                    alert('no se pudo compartir, prueba usando https en un navegador móvil')
-                                                                  })
-                                                                }
-                                                              } 
-                                                              else {
-                                                                alert('No está disponible el API de web share')
-                                                              }
+  //                                                               })
+  //                                                               .then(()=>{
+  //                                                                   alert('Hemos logrado compartir')
+  //                                                                 })
+  //                                                                 .catch(()=>{
+  //                                                                   alert('no se pudo compartir, prueba usando https en un navegador móvil')
+  //                                                                 })
+  //                                                               }
+  //                                                             } 
+  //                                                             else {
+  //                                                               alert('No está disponible el API de web share')
+  //                                                             }
 
-                                                              const $compartir6 = document.querySelector('#compartir6')
-                                                              if ('share' in navigator) { 
-                                                                  $compartir6.addEventListener('click', share)
-                                                                  function share () {
-                                                                          navigator.share ({
-                                                                              title: 'Comparte La Voz del Atril' ,
-                                                                              text: 'La Hormiga en La Oreja - La Voz del Atril',
-                                                                              url: 'https://lavozdelatril.vercel.app/laHormigaEnLaOreja.html' ,
+  //                                                             const $compartir6 = document.querySelector('#compartir6')
+  //                                                             if ('share' in navigator) { 
+  //                                                                 $compartir6.addEventListener('click', share)
+  //                                                                 function share () {
+  //                                                                         navigator.share ({
+  //                                                                             title: 'Comparte La Voz del Atril' ,
+  //                                                                             text: 'La Hormiga en La Oreja - La Voz del Atril',
+  //                                                                             url: 'https://lavozdelatril.vercel.app/laHormigaEnLaOreja.html' ,
                                                           
-                                                                          })
-                                                                          .then(()=>{
-                                                                              alert('Hemos logrado compartir')
-                                                                            })
-                                                                            .catch(()=>{
-                                                                              alert('no se pudo compartir, prueba usando https en un navegador móvil')
-                                                                            })
-                                                                          }
-                                                                        } 
-                                                                        else {
-                                                                          alert('No está disponible el API de web share')
-                                                                        }
+  //                                                                         })
+  //                                                                         .then(()=>{
+  //                                                                             alert('Hemos logrado compartir')
+  //                                                                           })
+  //                                                                           .catch(()=>{
+  //                                                                             alert('no se pudo compartir, prueba usando https en un navegador móvil')
+  //                                                                           })
+  //                                                                         }
+  //                                                                       } 
+  //                                                                       else {
+  //                                                                         alert('No está disponible el API de web share')
+  //                                                                       }
                                                 
                                       
-                                                                        const $compartir7 = document.querySelector('#compartir7')
-                                                              if ('share' in navigator) { 
-                                                                  $compartir7.addEventListener('click', share)
-                                                                  function share () {
-                                                                          navigator.share ({
-                                                                              title: 'Comparte La Voz del Atril' ,
-                                                                              text: 'La Alfombra Roja  - La Voz del Atril',
-                                                                              url: 'https://lavozdelatril.vercel.app/laHormigaEnLaOreja.html' ,
+  //                                                                       const $compartir7 = document.querySelector('#compartir7')
+  //                                                             if ('share' in navigator) { 
+  //                                                                 $compartir7.addEventListener('click', share)
+  //                                                                 function share () {
+  //                                                                         navigator.share ({
+  //                                                                             title: 'Comparte La Voz del Atril' ,
+  //                                                                             text: 'La Alfombra Roja  - La Voz del Atril',
+  //                                                                             url: 'https://lavozdelatril.vercel.app/laHormigaEnLaOreja.html' ,
                                                           
-                                                                          })
-                                                                          .then(()=>{
-                                                                              alert('Hemos logrado compartir')
-                                                                            })
-                                                                            .catch(()=>{
-                                                                              alert('no se pudo compartir, prueba usando https en un navegador móvil')
-                                                                            })
-                                                                          }
-                                                                        } 
-                                                                        else {
-                                                                          alert('No está disponible el API de web share')
-                                                                        }
+  //                                                                         })
+  //                                                                         .then(()=>{
+  //                                                                             alert('Hemos logrado compartir')
+  //                                                                           })
+  //                                                                           .catch(()=>{
+  //                                                                             alert('no se pudo compartir, prueba usando https en un navegador móvil')
+  //                                                                           })
+  //                                                                         }
+  //                                                                       } 
+  //                                                                       else {
+  //                                                                         alert('No está disponible el API de web share')
+  //                                                                       }
                                                 
                                       
                             
