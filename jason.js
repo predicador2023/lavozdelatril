@@ -85,36 +85,34 @@ const observer = new IntersectionObserver (callback, options)
     //            });
 
 
-            //código corazón en la sección historias
-            // corazón blanco al dar clic se vuelva de color rojo
-             // corazón rojo al dar clic se vuelva de color blanco
-
+            
 // -------------------------------------------------------------------
- //Boton compartir relatos
+ // Boton compartir relatos
 
-/* const shareData = {
-  title: "MDN",
-  text: "Learn web development on MDN!",
-  url: "https://developer.mozilla.org",
+ const shareData = {
+  title: "La Luna de Paita",
+  text: "Relato compartido",
+  url: "https://lavozdelatril.vercel.app/laLunaDePaita.html",
 };
 
-const btn = document.querySelector("button");
-const resultPara = document.querySelector(".result");
+const btn = document.querySelector("#compRelato");
+// const resultPara = document.querySelector(".result");
 
 // Share must be triggered by "user activation"
 btn.addEventListener("click", async () => {
   try {
     await navigator.share(shareData);
-    resultPara.textContent = "MDN shared successfully";
+    resultPara.textContent = "La Luna de Paita se compartió satisfactoriamente";
   } catch (err) {
     resultPara.textContent = `Error: ${err}`;
   }
 });
 
-*/
 
-
- // Mostrar corazones            
+ //código corazón en la sección historias
+            // corazón blanco al dar clic se vuelva de color rojo
+             // corazón rojo al dar clic se vuelva de color blanco
+           
        function mostrar() {
 
           document.getElementById('corazonrojo').style.display = 'block';
@@ -215,7 +213,7 @@ function ocultar6() {
 
     //imagen de compartir
     //codigo para compartir desde nuestro celular
- const $compRelato= document.querySelector ('#compRelato')
+  /*  const $compRelato= document.querySelector ('#compRelato')
     if ('share' in navigator) { 
         $compRelato.addEventListener('click', share)
         function share () {
@@ -237,7 +235,7 @@ function ocultar6() {
                 alert('No está disponible el API de web share')
               }
 
-  /* 
+ 
               const $compartirBoton2 = document.querySelector('#compartirBoton2')
               if ('share' in navigator) { 
                   $compartirBoton2.addEventListener('click', share)
