@@ -92,7 +92,7 @@ const observer = new IntersectionObserver (callback, options)
 // -------------------------------------------------------------------
  //Boton compartir relatos
 
- const shareData = {
+/* const shareData = {
   title: "MDN",
   text: "Learn web development on MDN!",
   url: "https://developer.mozilla.org",
@@ -110,6 +110,8 @@ btn.addEventListener("click", async () => {
     resultPara.textContent = `Error: ${err}`;
   }
 });
+
+*/
 
 
  // Mostrar corazones            
@@ -213,7 +215,7 @@ function ocultar6() {
 
     //imagen de compartir
     //codigo para compartir desde nuestro celular
-  /*  const $compartirBoton1 = document.querySelector('#compartirBoton1')
+ const $compartirBoton1 = document.querySelector('#compartirBoton1')
     if ('share' in navigator) { 
         $compartirBoton1.addEventListener('click', share)
         function share () {
@@ -235,7 +237,7 @@ function ocultar6() {
                 alert('No está disponible el API de web share')
               }
 
-
+  /* 
               const $compartirBoton2 = document.querySelector('#compartirBoton2')
               if ('share' in navigator) { 
                   $compartirBoton2.addEventListener('click', share)
