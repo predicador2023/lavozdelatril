@@ -102,9 +102,11 @@ const btn = document.querySelector("#compRelato");
 btn.addEventListener("click", async () => {
   try {
     await navigator.share(shareData);
-    resultPara.textContent = "La Luna de Paita se compartió satisfactoriamente";
+    alert('El relato se compartió exitosamente')
+   // resultPara.textContent = "La Luna de Paita se compartió satisfactoriamente";
   } catch (err) {
-    resultPara.textContent = `Error: ${err}`;
+    alert('No se pudo, `Error: ${err}` ')
+    //resultPara.textContent = `Error: ${err}`;
   }
 });
 
