@@ -687,7 +687,12 @@ video {
         color: rgb(228, 227, 255);
         border-radius: 50%;
 
-      }       
+      } 
+      #comRelato button   {
+        background-color: rgb(18, 0, 118);
+        color: white;
+        padding: 3px;
+      }     
          
 
     @media screen and  (min-width: 260px) and ( max-width:528px ){
