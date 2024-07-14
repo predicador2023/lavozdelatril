@@ -93,13 +93,13 @@ const observer = new IntersectionObserver (callback, options)
   title: "La Luna de Paita",
   text: "Relato compartido",
   url: "https://lavozdelatril.vercel.app/laLunaDePaita.html",
-};
+}
 
-const btn = document.querySelector("#compRelato");
+const btnComp = document.querySelector("#compRelato");
 //  const resultPara = document.querySelector(".result");
 
 // Share must be triggered by "user activation"
-btn.addEventListener("click", async () => {
+btnComp.addEventListener("click", async () => {
   try {
     await navigator.share(shareData);
    console.log("La Luna de Paita se compartió satisfactoriamente");
