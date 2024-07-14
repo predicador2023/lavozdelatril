@@ -688,7 +688,7 @@ video {
         border-radius: 50%;
 
       } 
-      #comRelato button   {
+      div button   {
         background-color: rgb(18, 0, 118);
         color: white;
         padding: 3px;
