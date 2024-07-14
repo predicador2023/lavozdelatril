@@ -89,25 +89,25 @@ const observer = new IntersectionObserver (callback, options)
 // -------------------------------------------------------------------
  // Boton compartir relatos
 
-//  const shareData = {
-//   title: "La Luna de Paita",
-//   text: "Relato compartido",
-//   url: "https://lavozdelatril.vercel.app/laLunaDePaita.html",
-// }
+  const shareData = {
+   title: "La Luna de Paita",
+   text: "Relato compartido",
+   url: "https://lavozdelatril.vercel.app/laLunaDePaita.html",
+ }
 
-// const btnComp = document.querySelector("#compRelato");
-// //  const resultPara = document.querySelector(".result");
+ const btnComp = document.querySelector("div .btnComp > button");
+ //  const resultPara = document.querySelector(".result");
 
-// // Share must be triggered by "user activation"
-// btnComp.addEventListener("click", async () => {
-//   try {
-//     await navigator.share(shareData);
-//    console.log("La Luna de Paita se compartió satisfactoriamente");
-//   } catch (err) {
+// Share must be triggered by "user activation"
+ btnComp.addEventListener("click", async () => {
+   try {
+     await navigator.share(shareData);
+    console.log("La Luna de Paita se compartió satisfactoriamente");
+   } catch (err) {
 
-//     console.log( `Error: ${err}`);
-//   }
-// });
+     console.log( `Error: ${err}`);
+  }
+ });
 
 
  //código corazón en la sección historias
@@ -214,7 +214,7 @@ function ocultar6() {
 
     //imagen de compartir
     //codigo para compartir desde nuestro celular
-   const btnComp = document.querySelector ('#compRelato')
+  /*   const btnComp = document.querySelector ('#compRelato')
     if ('share' in navigator) { 
       btnComp.addEventListener('click', share)
         function share () {
@@ -237,7 +237,7 @@ function ocultar6() {
               }
 
  
-     /*          const $compartirBoton2 = document.querySelector('#compartirBoton2')
+             const $compartirBoton2 = document.querySelector('#compartirBoton2')
               if ('share' in navigator) { 
                   $compartirBoton2.addEventListener('click', share)
                   function share () {
