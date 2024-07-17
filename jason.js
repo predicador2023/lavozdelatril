@@ -89,25 +89,42 @@ const observer = new IntersectionObserver (callback, options)
 // -------------------------------------------------------------------
  // Boton compartir relatos
 
-  const shareData = {
-   title: "La Luna de Paita",
-   text: "Relato compartido",
-   url: "https://lavozdelatril.vercel.app/laLunaDePaita.html",
- }
 
- const btnComp = document.querySelectorAll(".btnComp > button");
+const btnComp = document.querySelector('#btnComp');
+
+         if ('share' in navigator) { 
+             btnComp.addEventListener('click', share)
+              function share () {
+                    navigator.share ({
+                       title: 'Comparte La Voz del Atril' ,
+                       text: 'La Luna de Paita - La Voz del Atril',
+                       url: 'https://lavozdelatril.vercel.app/laLunaDePaita.html' ,
+          
+                          })
+                          .then(()=>{
+                              alert('Hemos logrado compartir')
+                            })
+                            .catch(()=>{
+                              alert('no se pudo compartir, prueba usando https en un navegador móvil')
+                            })
+                          }
+                        } 
+            else {
+                   alert('No está disponible el API de web share')
+                        }
+
  //  const resultPara = document.querySelector(".result");
 
 // Share must be triggered by "user activation"
- btnComp.addEventListener("click", async () => {
-   try {
-     await navigator.share(shareData);
-    console.log("La Luna de Paita se compartió satisfactoriamente");
-   } catch (err) {
+//  btnComp.addEventListener("click", async () => {
+//    try {
+//      await navigator.share(shareData);
+//     console.log("La Luna de Paita se compartió satisfactoriamente");
+//    } catch (err) {
 
-     console.log(`Error: ${err}`);
-  }
- });
+//      console.log(`Error: ${err}`);
+//   }
+//  });
 
 
  //código corazón en la sección historias
