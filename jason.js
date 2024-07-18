@@ -90,10 +90,10 @@ const observer = new IntersectionObserver (callback, options)
  // Boton compartir relatos
 
 
-const btnComp = document.querySelector('#btnComp');
+const btnCom = document.querySelector('#botonComp');
 
          if ('share' in navigator) { 
-             btnComp.addEventListener('click', share)
+             btnCom.addEventListener('click', share)
               function share () {
                     navigator.share ({
                        title: 'Comparte La Voz del Atril' ,
