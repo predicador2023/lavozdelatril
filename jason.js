@@ -231,14 +231,14 @@ function ocultar6() {
 
     //imagen de compartir
     //codigo para compartir desde nuestro celular
-  /*   const btnComp = document.querySelector ('#compRelato')
+    const btnComp = document.querySelector ('#botonComp')
     if ('share' in navigator) { 
       btnComp.addEventListener('click', share)
         function share () {
                 navigator.share ({
                     title: 'Comparte La Voz del Atril' ,
-                    text: 'La Plaza de los Burros - La Voz del Atril',
-                    url: 'https://lavozdelatril.vercel.app/LaPlazaDeLosBurros.html' ,
+                    text: 'La Luna de Paita - La Voz del Atril',
+                    url: 'https://lavozdelatril.vercel.app/laLunaDePaita.html' ,
 
                 })
                 .then(()=>{
@@ -253,8 +253,8 @@ function ocultar6() {
                 alert('No está disponible el API de web share')
               }
 
- 
-             const $compartirBoton2 = document.querySelector('#compartirBoton2')
+   
+      /*        const $compartirBoton2 = document.querySelector('#compartirBoton2')
               if ('share' in navigator) { 
                   $compartirBoton2.addEventListener('click', share)
                   function share () {
