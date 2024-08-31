@@ -231,7 +231,7 @@ function ocultar6() {
 
     //imagen de compartir
     //codigo para compartir desde nuestro celular
-    const btnComp = document.querySelector ('#botonComp')
+   /*   const btnComp = document.querySelector ('#botonComp')
     if ('share' in navigator) { 
       btnComp.addEventListener('click', share)
         function share () {
@@ -248,13 +248,13 @@ function ocultar6() {
                     alert('no se pudo compartir, prueba usando https en un navegador móvil')
                   })
                 }
-              
-           } else {
+              } 
+              else {
                 alert('No está disponible el API de web share')
               }
 
    
-      /*        const $compartirBoton2 = document.querySelector('#compartirBoton2')
+            const $compartirBoton2 = document.querySelector('#compartirBoton2')
               if ('share' in navigator) { 
                   $compartirBoton2.addEventListener('click', share)
                   function share () {
