@@ -6,8 +6,8 @@ const cerrar = document.querySelector("#cerrar");
 const body = document.querySelector ("#body");
 
 abrir.addEventListener("click", () => {
-    barraNav.classList.add("visible");
-    body.classList.add("no-scroll");
+ barraNav.classList.add("visible");
+ body.classList.add("no-scroll");
 })
 
 cerrar.addEventListener("click", () =>  {
@@ -37,8 +37,9 @@ const observer = new IntersectionObserver (callback, options)
   const swith = document.querySelector(".switch");
 
   swith.addEventListener("click", e => {
-      swith.classList.toggle("active");
-      document.body.classList.toggle("active");
+    swith.classList.toggle("active");
+    document.body.classList.toggle("active");
+   
   })
   
 // -----------------------------------------------------------
