@@ -31,7 +31,16 @@ function callback(entries, observer) {
 }
 const observer = new IntersectionObserver (callback, options) 
   observer.observe(Mivideo)
+  
+// ---------------------------------------------------------
+// boton modo dark
+  const swith = document.querySelector(".switch");
 
+  swith.addEventListener("click", e => {
+      swith.classList.toggle("active");
+      document.body.classList.toggle("active");
+  })
+  
 // -----------------------------------------------------------
 // silder de imagenes en seccion acerca de
 
