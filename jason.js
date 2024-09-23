@@ -68,11 +68,6 @@ const observer = new IntersectionObserver (callback, options)
   }
    
 
-  
-       
-  
-
-
 // -----------------------------------------------------------
 // silder de imagenes en seccion acerca de
 
@@ -172,19 +167,19 @@ const btnCom = document.querySelector('#botonComp');
             // corazón blanco al dar clic se vuelva de color rojo
              // corazón rojo al dar clic se vuelva de color blanco
            
-       function mostrar() {
+      //  function mostrar() {
 
-          document.getElementById('corazonrojo').style.display = 'block';
-         document.getElementById('corazonblanco').style.display = 'none';
+      //     document.getElementById('corazonrojo').style.display = 'block';
+      //    document.getElementById('corazonblanco').style.display = 'none';
             
-                }
+      //           }
 
-       function ocultar() {
+      //  function ocultar() {
 
-          document.getElementById('corazonblanco').style.display = 'block';
-          document.getElementById('corazonrojo').style.display = 'none';
+      //     document.getElementById('corazonblanco').style.display = 'block';
+      //     document.getElementById('corazonrojo').style.display = 'none';
                 
-                }
+      //           }
                 
        function mostrar1() {
 
@@ -269,6 +264,41 @@ function ocultar6() {
     document.getElementById('corazonrojo7').style.display = 'none';
 
 }
+
+// codigo para corazon contador historias 
+// Seleccionamos el corazón y el contador
+const heart = document.getElementById('heart');
+const countDisplay = document.getElementById('count');
+
+// Obtenemos el valor guardado en el localStorage
+let count = localStorage.getItem('heartCount') ? parseInt(localStorage.getItem('heartCount')) : 0;
+let clicked = localStorage.getItem('heartClicked') === 'true';
+
+// Inicializamos la vista con los valores guardados
+countDisplay.textContent = count;
+if (clicked) {
+    heart.classList.add('clicked');
+}
+
+// Manejamos el evento de click en el corazón
+heart.addEventListener('click', () => {
+    clicked = !clicked; // Alterna entre click/no-click
+    
+    if (clicked) {
+        heart.classList.add('clicked');
+        count++;
+    } else {
+        heart.classList.remove('clicked');
+        count--;
+    }
+    
+    // Actualizamos el contador y el localStorage
+    countDisplay.textContent = count;
+    localStorage.setItem('heartCount', count);
+    localStorage.setItem('heartClicked', clicked);
+});
+
+
 
     //imagen de compartir
     //codigo para compartir desde nuestro celular

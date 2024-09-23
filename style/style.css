@@ -463,14 +463,14 @@ text-align: center;
           }
                     /* seccion slider en acerca de */
 
-.contenedor-Slider {
+/* .contenedor-Slider {
  display: flex;
  align-items: center;
  gap: 20px;
  width: auto;
  max-height: 200px;
 padding: 0px 30px;
-                    }
+                    } */
 
                     /* .slider-Izquierdo, .slider-Derecho { */
                         /* width: 10%; */
@@ -602,6 +602,66 @@ display: none;
  display: none;
               }
 
+
+ /* corazon para historias  */
+
+ .counter-container {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.heart {
+    width: 16px;  /* Aumentar el tamaño del corazón */
+    height: 16px;
+    background-color: lightgray;
+    position: relative;
+    transform: rotate(-45deg);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    width: 16px;  /* Ajustamos para que coincida con el tamaño del corazón */
+    height: 16px;
+    background-color: lightgray;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.heart::before {
+    left: 0;
+    top: -8px;
+}
+
+.heart.clicked {
+    background-color: red;
+}
+
+.heart.clicked::before,
+.heart.clicked::after {
+    background-color: red;
+}
+
+#count {
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#label {
+    margin-left: 3px;
+    font-size: 12px;  /* Texto un poco más pequeño que el número */
+    margin-right: 10px;
+}
+
+
+
  /* boton compartir  para pc no aparece*/
  .botonCompartir {
  background-color: red;
@@ -610,6 +670,7 @@ display: none;
 
  #compartir {
  display: block;
+ 
                         
      }
  .imgShare:active {
@@ -624,10 +685,22 @@ display: none;
  width: 100%;
  margin-bottom: 10px;
      /* position: relative; */
-     }          
+     }   
+     
+ .imagenBoletincito {
+     width: 100%;
+     margin-bottom: 10px;
+     }    
+
+.suscribete_index{
+     position: absolute;
+     top: 18%;
+     left: 0%;          
+           }    
+
  .suscribete {
   position: absolute;
-  top: 35%;
+  top: 70%;
   left: 0%;          
      }
 
