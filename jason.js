@@ -67,7 +67,20 @@ const observer = new IntersectionObserver (callback, options)
    }  
   }
    
-
+// boton compartir relato del index
+function compartirRelato() {
+  if (navigator.share) {
+    navigator.share({
+      title: 'La Voz del Atril',
+      text: 'Mirá este relato urbano con una chispa espiritual.',
+      url: window.location.href
+    })
+    .then(() => console.log('Compartido con éxito'))
+    .catch((error) => console.log('Error al compartir:', error));
+  } else {
+    alert('Tu navegador no permite compartir directamente. Copiá el enlace manualmente.');
+  }
+}
 // -----------------------------------------------------------
 // silder de imagenes en seccion acerca de
 
