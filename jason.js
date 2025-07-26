@@ -344,52 +344,87 @@ heart.addEventListener('click', () => {
 //   });
 // });
 // 
-function compartirHistoria(elemento) {
-  // Busca el contenedor de la historia
-  const contenedor = elemento.closest(".contenedorNuevo");
+// function compartirHistoria(elemento) {
+//   // Busca el contenedor de la historia
+//   const contenedor = elemento.closest(".contenedorNuevo");
 
-  // Obtiene el título del h3 dentro del contenedor
-  const titulo = contenedor.querySelector("h3")?.textContent || "Historia de La Voz del Atril";
+//   // Obtiene el título del h3 dentro del contenedor
+//   const titulo = contenedor.querySelector("h3")?.textContent || "Historia de La Voz del Atril";
 
-  // Busca el enlace al relato (.html), si existe
-  const enlace = contenedor.querySelector("a[href$='.html']");
-  const url = enlace ? enlace.href : window.location.href;
+//   // Busca el enlace al relato (.html), si existe
+//   const enlace = contenedor.querySelector("a[href$='.html']");
+//   const url = enlace ? enlace.href : window.location.href;
 
-  // Mensaje narrativo opcional
-  const mensajePoetico = "📤 Esta historia se fue a tocar corazones.";
+//   // Mensaje narrativo opcional
+//   const mensajePoetico = "📤 Esta historia se fue a tocar corazones.";
 
-  // Usa la API de compartir si está disponible
-  if (navigator.share) {
+//   // Usa la API de compartir si está disponible
+//   if (navigator.share) {
+//     navigator.share({
+//       title: `La Voz del Atril - ${titulo}`,
+//       text: `${titulo} – Una parábola urbana para compartir.`,
+//       url: url
+//     })
+//     .then(() => {
+//       console.log("Compartido con éxito");
+//       mostrarMensajeTemporal(mensajePoetico, elemento);
+//     })
+//     .catch((error) => console.error("Error al compartir:", error));
+//   } else {
+//     alert("🛑 Tu navegador no permite compartir directamente.");
+//   }
+// }
+
+// // Muestra un mensaje debajo del ícono por unos segundos
+// function mostrarMensajeTemporal(mensaje, elemento) {
+//   const mensajeDiv = document.createElement("div");
+//   mensajeDiv.textContent = mensaje;
+//   mensajeDiv.style.fontSize = "0.9em";
+//   mensajeDiv.style.color = "#444";
+//   mensajeDiv.style.marginTop = "5px";
+//   mensajeDiv.style.transition = "opacity 0.5s ease";
+//   elemento.appendChild(mensajeDiv);
+
+//   setTimeout(() => {
+//     mensajeDiv.style.opacity = "0";
+//     setTimeout(() => {
+//       mensajeDiv.remove();
+//     }, 500);
+//   }, 2500); // El mensaje dura 2.5 segundos
+// }
+
+
+function compartirHistoriaAdaptativa() {
+  const enlace = "https://tusitio.com/LaHuidaEgipto.html"; // actualizá con tu link real
+  const titulo = "La Huida a Egipto";
+  const texto = `📖 ${titulo}\nLeé la historia acá: ${enlace}`;
+
+  const esMovil = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
+
+  if (esMovil) {
+    // Usar WhatsApp en móvil
+    const mensaje = encodeURIComponent(texto);
+    const urlWhatsApp = `https://wa.me/?text=${mensaje}`;
+    window.open(urlWhatsApp, "_blank");
+  } else if (navigator.share) {
+    // Usar la API Share en dispositivos compatibles
     navigator.share({
-      title: `La Voz del Atril - ${titulo}`,
-      text: `${titulo} – Una parábola urbana para compartir.`,
-      url: url
+      title: titulo,
+      text: texto,
+      url: enlace
     })
-    .then(() => {
-      console.log("Compartido con éxito");
-      mostrarMensajeTemporal(mensajePoetico, elemento);
-    })
-    .catch((error) => console.error("Error al compartir:", error));
+    .then(() => console.log("Compartido con navigator.share"))
+    .catch((error) => console.log("Error al compartir:", error));
   } else {
-    alert("🛑 Tu navegador no permite compartir directamente.");
+    // Plan C: copiar al portapapeles
+    const textarea = document.createElement("textarea");
+    textarea.value = enlace;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+    alert("📋 Enlace copiado al portapapeles.");
   }
 }
 
-// Muestra un mensaje debajo del ícono por unos segundos
-function mostrarMensajeTemporal(mensaje, elemento) {
-  const mensajeDiv = document.createElement("div");
-  mensajeDiv.textContent = mensaje;
-  mensajeDiv.style.fontSize = "0.9em";
-  mensajeDiv.style.color = "#444";
-  mensajeDiv.style.marginTop = "5px";
-  mensajeDiv.style.transition = "opacity 0.5s ease";
-  elemento.appendChild(mensajeDiv);
-
-  setTimeout(() => {
-    mensajeDiv.style.opacity = "0";
-    setTimeout(() => {
-      mensajeDiv.remove();
-    }, 500);
-  }, 2500); // El mensaje dura 2.5 segundos
-}
 
