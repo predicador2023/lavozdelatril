@@ -395,7 +395,7 @@ heart.addEventListener('click', () => {
 
 
 function compartirHistoriaAdaptativa() {
-  const enlace = "https://tusitio.com/LaHuidaEgipto.html"; // actualizá con tu link real
+  const enlace = "https://lavozdelatril.vercel.app/LaHuidaEgipto.html"; // actualizá con tu link real
   const titulo = "La Huida a Egipto";
   const texto = `📖 ${titulo}\nLeé la historia acá: ${enlace}`;
 
