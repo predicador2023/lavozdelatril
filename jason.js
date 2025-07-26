@@ -139,28 +139,28 @@ function compartirRelato() {
  // Boton compartir relatos
 
 
-const btnCom = document.querySelector('#botonComp');
+// const btnCom = document.querySelector('#botonComp');
 
-         if ('share' in navigator) { 
-             btnCom.addEventListener('click', share)
-              function share () {
-                    navigator.share ({
-                       title: 'Comparte La Voz del Atril' ,
-                       text: 'La Luna de Paita - La Voz del Atril',
-                       url: 'https://lavozdelatril.vercel.app/laLunaDePaita.html' ,
+//          if ('share' in navigator) { 
+//              btnCom.addEventListener('click', share)
+//               function share () {
+//                     navigator.share ({
+//                        title: 'Comparte La Voz del Atril' ,
+//                        text: 'La Luna de Paita - La Voz del Atril',
+//                        url: 'https://lavozdelatril.vercel.app/laLunaDePaita.html' ,
           
-                          })
-                          .then(()=>{
-                              alert('Hemos logrado compartir')
-                            })
-                            .catch(()=>{
-                              alert('no se pudo compartir, prueba usando https en un navegador móvil')
-                            })
-                          }
-                        } 
-            else {
-                   alert('No está disponible el API de web share')
-                        }
+//                           })
+//                           .then(()=>{
+//                               alert('Hemos logrado compartir')
+//                             })
+//                             .catch(()=>{
+//                               alert('no se pudo compartir, prueba usando https en un navegador móvil')
+//                             })
+//                           }
+//                         } 
+//             else {
+//                    alert('No está disponible el API de web share')
+//                         }
 
  //  const resultPara = document.querySelector(".result");
 
@@ -315,32 +315,81 @@ heart.addEventListener('click', () => {
 
     //imagen de compartir
     //codigo para compartir desde nuestro celular
-   const historias = [
-  { id: 'compartir', text: 'La Luna de Paita', url: 'https://lavozdelatril.vercel.app/laLunaDePaita.html' },
-  { id: 'compartir2', text: 'La Huida a Egipto', url: 'https://lavozdelatril.vercel.app/LaHuidaEgipto.html' },
-  { id: 'compartir3', text: 'La Plaza de los Burros', url: 'https://lavozdelatril.vercel.app/LaPlazaDeLosBurros.html' },
-  { id: 'compartir4', text: 'Una Lección de Ajedrez', url: 'https://lavozdelatril.vercel.app/unaLeccionDeAjedrez.html' },
-  { id: 'compartir5', text: 'El Caramelo en La Mano', url: 'https://lavozdelatril.vercel.app/elCarameloEnLaMano.html' },
-  { id: 'compartir6', text: 'La Hormiga en La Oreja', url: 'https://lavozdelatril.vercel.app/laHormigaEnLaOreja.html' },
-  { id: 'compartir7', text: 'La Alfombra Roja', url: 'https://lavozdelatril.vercel.app/LaAlfombraRojaDeLaComparacion.html' }
-];
+//    const historias = [
+//   { id: 'compartir', text: 'La Luna de Paita', url: 'https://lavozdelatril.vercel.app/laLunaDePaita.html' },
+//   { id: 'compartir2', text: 'La Huida a Egipto', url: 'https://lavozdelatril.vercel.app/LaHuidaEgipto.html' },
+//   { id: 'compartir3', text: 'La Plaza de los Burros', url: 'https://lavozdelatril.vercel.app/LaPlazaDeLosBurros.html' },
+//   { id: 'compartir4', text: 'Una Lección de Ajedrez', url: 'https://lavozdelatril.vercel.app/unaLeccionDeAjedrez.html' },
+//   { id: 'compartir5', text: 'El Caramelo en La Mano', url: 'https://lavozdelatril.vercel.app/elCarameloEnLaMano.html' },
+//   { id: 'compartir6', text: 'La Hormiga en La Oreja', url: 'https://lavozdelatril.vercel.app/laHormigaEnLaOreja.html' },
+//   { id: 'compartir7', text: 'La Alfombra Roja', url: 'https://lavozdelatril.vercel.app/LaAlfombraRojaDeLaComparacion.html' }
+// ];
 
-historias.forEach(historia => {
-  const boton = document.getElementById(historia.id);
+//  historias.forEach(historia => {
+//   const boton = document.getElementById(historia.id);
+//   if (!boton) return;
 
-  if (boton) {
-    boton.addEventListener('click', () => {
-      if (navigator.share) {
-        navigator.share({
-          title: 'Comparte La Voz del Atril',
-          text: `${historia.text} - La Voz del Atril`,
-          url: historia.url
-        })
-        .then(() => alert(`📢 ¡"${historia.text}" fue compartido con éxito!`))
-        .catch(() => alert('⚠️ No se pudo compartir. Probá usar HTTPS y un navegador móvil.'));
-      } else {
-        alert('🛑 Tu navegador no admite compartir directamente.');
-      }
-    });
+//   boton.addEventListener('click', () => {
+//     if (navigator.share) {
+//       navigator.share({
+//         title: 'Comparte La Voz del Atril',
+//         text: `${historia.text} - Una parábola urbana para reflexionar.`,
+//         url: historia.url
+//       })
+//       .then(() => alert(`📢 "${historia.text}" fue compartida con éxito`))
+//       .catch(() => alert('⚠️ No se pudo compartir. Probá en un navegador móvil con HTTPS.'));
+//     } else {
+//       alert('🛑 Tu navegador no admite compartir directamente.');
+//     }
+//   });
+// });
+// 
+function compartirHistoria(elemento) {
+  // Busca el contenedor de la historia
+  const contenedor = elemento.closest(".contenedorNuevo");
+
+  // Obtiene el título del h3 dentro del contenedor
+  const titulo = contenedor.querySelector("h3")?.textContent || "Historia de La Voz del Atril";
+
+  // Busca el enlace al relato (.html), si existe
+  const enlace = contenedor.querySelector("a[href$='.html']");
+  const url = enlace ? enlace.href : window.location.href;
+
+  // Mensaje narrativo opcional
+  const mensajePoetico = "📤 Esta historia se fue a tocar corazones.";
+
+  // Usa la API de compartir si está disponible
+  if (navigator.share) {
+    navigator.share({
+      title: `La Voz del Atril - ${titulo}`,
+      text: `${titulo} – Una parábola urbana para compartir.`,
+      url: url
+    })
+    .then(() => {
+      console.log("Compartido con éxito");
+      mostrarMensajeTemporal(mensajePoetico, elemento);
+    })
+    .catch((error) => console.error("Error al compartir:", error));
+  } else {
+    alert("🛑 Tu navegador no permite compartir directamente.");
   }
-});
+}
+
+// Muestra un mensaje debajo del ícono por unos segundos
+function mostrarMensajeTemporal(mensaje, elemento) {
+  const mensajeDiv = document.createElement("div");
+  mensajeDiv.textContent = mensaje;
+  mensajeDiv.style.fontSize = "0.9em";
+  mensajeDiv.style.color = "#444";
+  mensajeDiv.style.marginTop = "5px";
+  mensajeDiv.style.transition = "opacity 0.5s ease";
+  elemento.appendChild(mensajeDiv);
+
+  setTimeout(() => {
+    mensajeDiv.style.opacity = "0";
+    setTimeout(() => {
+      mensajeDiv.remove();
+    }, 500);
+  }, 2500); // El mensaje dura 2.5 segundos
+}
+
