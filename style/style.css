@@ -1012,6 +1012,30 @@ align-items: center;
  font-size: 20px;
         }
 
+.compartir {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto;
+  padding: 10px;
+  width: 100px; /* ajustá según el diseño */
+  background-color: #5e81ac;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.compartir img {
+  width: 25px;
+  height: 25px;
+}
+
+.compartir:hover {
+  transform: scale(1.1);
+}
+
+
+
  .imgRecursos {
  width: 80%;
  display: block;
